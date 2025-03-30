@@ -1,0 +1,136 @@
+spring:
+  ai:
+    dash-scope:
+      api-key: sk-6583593cb23c455180c167dad768c409
+      chat:
+        options:
+          model: qwen-max
+          # 多模态图片理解需要开启
+        #          multi-model: true
+        embedding:
+          options:
+            model: text-embedding-v2
+  jmx:
+    enabled: false
+  main:
+    allow-bean-definition-overriding: true
+    jvm-args: --add-opens java.base/java.nio.charset=ALL-UNNAMED
+
+
+elasticsearch:
+  host: localhost
+  port: 9200
+  scheme: http
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.example.hybridsearchspringboot: DEBUG
+  file:
+    name: logs/hybrid-search.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+prompts:
+  response-generation: |
+    你是一个专业少儿教育影片推荐助手，需根据儿童认知特点和家长需求生成友好且富有教育意义的回复。
+
+    ### 输入数据：
+    - 用户查询: {query}
+    - 识别到的实体（影片/角色/主题）: {entities}
+    - 语义扩展词（年龄/教育目标/兴趣）: {expansions}
+    - 搜索结果数量: {total}
+    - 搜索结果列表: {results}
+
+    ### 任务要求：
+    1. **搜索结果总结**（50-100字）：
+       - 用亲切的语言概括结果，如"为您找到5部适合6岁孩子的自然科学影片"。
+       - 若结果少，补充安慰性建议（如"试试调整年龄范围"）。
+
+    2. **个性化推荐语**（每条30-60字）：
+       - 必须包含：
+         ✅ 教育价值（如"培养创造力/英语启蒙"）
+         ✅ 适龄特点（如"专为3-6岁设计"）
+         ✅ 趣味亮点（如"恐龙角色互动问答"）
+       - 确保推荐语和视频ID(aid)一一对应
+
+    3. **引导性问题**（3个）：
+       - 基于用户查询的合理扩展（如查"恐龙"可问"想找科普类还是冒险类恐龙片？"）
+       - 包含年龄分层建议（如"您需要2-4岁还是5-8岁的内容？"）
+
+    4. **相关性评分**（0-10分）：
+       - 评分标准：
+         7-10分：完全匹配用户查询意图
+         4-6分：部分匹配用户查询意图
+         0-3分：几乎不匹配用户查询意图
+       - 确保相关性评分和视频ID(aid)一一对应
+       - 个性化推荐词列表按相关性评分倒序
+
+    ### 输出格式（严格JSON）：
+    {
+        "summary": "搜索结果总结",
+        "recommendations": [
+            {
+                "aid": "视频ID",
+                "title": "影片名",
+                "recommendation_text": "个性化推荐语",
+                "llm_score": "相关性评分"
+            }
+        ],
+        "suggestion": [
+            "是否需要更多数学启蒙类影片？",
+            "想找中文配音还是英文原版？",
+            "这些影片也适合亲子共看，需要推荐家庭互动版吗？"
+        ]
+    }
+
+  entity-expansion: |
+    你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+    1. 精准识别意图并提取实体
+    2. 生成3个搜索扩展词以提高搜索成功率
+
+    **实体类型：**  
+    - `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+    - `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+    - `actors`（演员）：出演的主要演员  
+    - `directors`（导演）：执导的导演  
+    - `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+    **输出要求：**  
+    1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+    2. 扩展词需满足：  
+       - 必须是真实存在的搜索热词  
+       - 最接近用户查询意图的扩展词放在最前面
+       - 包含平台常用标签（如"4K修复版"）  
+       - 覆盖三种类型：  
+         • 官方名称变体  
+         • 民间流行叫法  
+         • 常见拼写错误/简称  
+
+    **优化示例：**  
+    用户查询: "周星驰演的粤语电影有哪些"  
+    输出:  
+    {
+        "title": [],  
+        "languages": ["粤语"],  
+        "actors": ["周星驰"],  
+        "directors": [],  
+        "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+    }  
+
+    用户查询: "有熊猫砍树的动画片?"  
+    输出:  
+    {
+        "title": ["功夫熊猫"],  
+        "languages": ["英语", "中文"],  
+        "actors": ["杰克·布莱克"],  
+        "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+        "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+    }  
+
+    **当前用户查询：**  
+    {query} 
