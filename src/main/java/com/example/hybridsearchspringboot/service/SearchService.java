@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -17,6 +18,7 @@ public class SearchService {
 
     private final ElasticsearchService elasticsearchService;
     private final ModelLoader modelLoader;
+    private final ObjectMapper objectMapper;
 
     /**
      * 执行混合搜索
@@ -98,20 +100,63 @@ public class SearchService {
             long totalTime = System.currentTimeMillis() - startTime;
 
             // 6. 构建返回结果
-            Map<String, Object> response = new HashMap<>();
-            response.put("query", query);
-            response.put("entities", entities);
-            response.put("expansions", expansions);
-            response.put("results", processedResults);
-            response.put("structuredResponse", structuredResponse);
-            response.put("total", processedResults.size());
-            response.put("timing", Map.of(
-                "entity_recognition_and_expansion", entityTime / 1000.0,
-                "es_search", esSearchTime / 1000.0,
-                "result_processing", processTime / 1000.0,
-                "total", totalTime / 1000.0
-            ));
-            response.put("timestamp", System.currentTimeMillis());
+            Map<String, Object> response;
+            try {
+                // 解析结构化响应
+                response = objectMapper.readValue(structuredResponse, Map.class);
+                
+                // 添加时间信息
+                response.put("search_time", String.format("%.2f秒", esSearchTime / 1000.0));
+                response.put("structured_time", String.format("%.2f秒", processTime / 1000.0));
+                response.put("total_time", String.format("%.2f秒", totalTime / 1000.0));
+
+                // 处理推荐列表，合并 ES 结果和 LLM 生成的推荐文本
+                if (response.containsKey("recommendations")) {
+                    List<Map<String, Object>> llmRecommendations = (List<Map<String, Object>>) response.get("recommendations");
+                    Map<String, Map<String, Object>> esResultsMap = processedResults.stream()
+                        .collect(Collectors.toMap(
+                            result -> (String) result.get("aid"),
+                            result -> result,
+                            (r1, r2) -> r1
+                        ));
+
+                    // 遍历 LLM 推荐，合并 ES 结果
+                    for (Map<String, Object> llmRec : llmRecommendations) {
+                        String aid = (String) llmRec.get("aid");
+                        Map<String, Object> esResult = esResultsMap.get(aid);
+                        if (esResult != null) {
+                            // 保留 LLM 生成的推荐文本和分数
+                            String recommendationText = (String) llmRec.get("recommendation_text");
+                            Object score = llmRec.containsKey("llm_score") ? 
+                                Integer.parseInt(llmRec.get("llm_score").toString()) :
+                                llmRec.get("score");
+
+                            // 使用 ES 结果作为基础，添加 LLM 生成的内容
+                            Map<String, Object> mergedRec = new HashMap<>(esResult);
+                            mergedRec.put("recommendation_text", recommendationText);
+                            mergedRec.put("score", score);
+                            mergedRec.put("poster", esResult.get("vPic")); // 使用 vPic 作为 poster
+                            mergedRec.put("title", esResult.getOrDefault("title", ""));
+                            mergedRec.put("aid", aid);
+                            mergedRec.put("brief", esResult.getOrDefault("brief", ""));
+                            mergedRec.put("directors", esResult.getOrDefault("directors", List.of()));
+                            mergedRec.put("actors", esResult.getOrDefault("actors", List.of()));
+                            mergedRec.put("languages", esResult.getOrDefault("languages", List.of()));
+                            mergedRec.put("tags", esResult.getOrDefault("tags", List.of()));
+                            mergedRec.put("publishYear", esResult.getOrDefault("publishYear", ""));
+                            mergedRec.put("total", esResult.getOrDefault("total", 0));
+                            mergedRec.put("last", esResult.getOrDefault("last", "0"));
+                            mergedRec.put("completed", esResult.getOrDefault("completed", false));
+                            
+                            // 更新 LLM 推荐对象
+                            llmRec.putAll(mergedRec);
+                        }
+                    }
+                }
+            } catch (Exception e) {
+                log.error("解析结构化响应失败", e);
+                throw new RuntimeException("解析结构化响应失败", e);
+            }
             
             return response;
         } catch (Exception e) {

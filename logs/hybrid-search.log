@@ -11128,3 +11128,2145 @@ java.net.ConnectException: Connection refused: no further information
 2025-03-31 17:51:16 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
 2025-03-31 17:51:16 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
 2025-03-31 17:51:16 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 18:55:54 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-03-31 18:55:54 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-03-31 18:55:54 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-03-31 18:55:54 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-03-31 18:55:54 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Starting HybridSearchSpringbootApplication using Java 17 with PID 29280 (D:\projects\hybrid-search-springboot\target\classes started by zhi25.liu in D:\projects\hybrid-search-springboot)
+2025-03-31 18:55:54 [main] DEBUG c.e.h.HybridSearchSpringbootApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-31 18:55:54 [main] INFO  c.e.h.HybridSearchSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 18:55:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-31 18:55:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-31 18:55:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-31 18:55:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-31 18:55:57 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-31 18:55:57 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 18:55:57 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-03-31 18:55:57 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-03-31 18:55:57 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 18:55:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 18:55:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 18:55:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-31 18:55:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 18:55:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3707 ms
+2025-03-31 18:56:00 [main] INFO  c.e.h.service.BGETokenizer - BGE Tokenizer加载成功
+2025-03-31 18:56:02 [main] INFO  c.e.h.service.BGEModelManager - BGE模型加载成功
+2025-03-31 18:56:05 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-03-31 18:56:05 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@63896cf7 
+2025-03-31 18:56:05 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-03-31 18:56:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 18:56:06 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Started HybridSearchSpringbootApplication in 13.046 seconds (process running for 15.331)
+2025-03-31 18:56:06 [main] ERROR c.e.h.HybridSearchSpringbootApplication - --------------------启动成功--------------------
+2025-03-31 18:56:06 [RMI TCP Connection(10)-172.29.16.1] WARN  o.s.b.a.d.e.ElasticsearchReactiveHealthIndicator - Elasticsearch health check failed
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-31 18:56:16 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 18:56:16 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 18:56:16 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-31 18:56:16 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+1. 精准识别意图并提取实体
+2. 生成3个搜索扩展词以提高搜索成功率
+
+**实体类型：**  
+- `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+- `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+- `actors`（演员）：出演的主要演员  
+- `directors`（导演）：执导的导演  
+- `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+**输出要求：**  
+1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+2. 扩展词需满足：  
+   - 必须是真实存在的搜索热词  
+   - 最接近用户查询意图的扩展词放在最前面
+   - 包含平台常用标签（如"4K修复版"）  
+   - 覆盖三种类型：  
+     • 官方名称变体  
+     • 民间流行叫法  
+     • 常见拼写错误/简称  
+
+**优化示例：**  
+用户查询: "周星驰演的粤语电影有哪些"  
+输出:  
+{
+    "title": [],  
+    "languages": ["粤语"],  
+    "actors": ["周星驰"],  
+    "directors": [],  
+    "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+}  
+
+用户查询: "有熊猫砍树的动画片?"  
+输出:  
+{
+    "title": ["功夫熊猫"],  
+    "languages": ["英语", "中文"],  
+    "actors": ["杰克·布莱克"],  
+    "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+    "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+}  
+
+**当前用户查询：**  
+{query} 
+2025-03-31 18:56:21 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - LLM 返回的原始响应: {
+    "title": ["精灵鼠小弟", "料理鼠王"],
+    "languages": [],
+    "actors": [],
+    "directors": [],
+    "expansion_terms": ["老鼠电影推荐", "卡通老鼠电影", "关于老鼠的影片"]
+}
+2025-03-31 18:56:21 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - 解析后的 JSON 结果: {title=[精灵鼠小弟, 料理鼠王], languages=[], actors=[], directors=[], expansion_terms=[老鼠电影推荐, 卡通老鼠电影, 关于老鼠的影片]}
+2025-03-31 18:56:21 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 实体识别和扩展词生成结果: {title=[精灵鼠小弟, 料理鼠王], languages=[], actors=[], directors=[], expansion_terms=[老鼠电影推荐, 卡通老鼠电影, 关于老鼠的影片]}
+2025-03-31 18:56:21 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 实体识别和语义扩展耗时: 5.426秒
+2025-03-31 18:56:21 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 向量查询拼接结果: 老鼠电影推荐 卡通老鼠电影 关于老鼠的影片
+2025-03-31 18:56:22 [http-nio-8080-exec-3] INFO  c.e.h.service.BGEModelManager - 模型输出形状: [1][512][512]
+2025-03-31 18:56:22 [http-nio-8080-exec-3] INFO  c.e.h.service.BGEModelManager - 输入 tokenIds 长度: 512
+2025-03-31 18:56:24 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - ES搜索耗时: 2.212秒
+2025-03-31 18:56:24 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 结果处理耗时: 0.0秒
+2025-03-31 18:56:24 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业少儿教育影片推荐助手，需根据儿童认知特点和家长需求生成友好且富有教育意义的回复。
+
+### 输入数据：
+- 用户查询: {query}
+- 识别到的实体（影片/角色/主题）: {entities}
+- 语义扩展词（年龄/教育目标/兴趣）: {expansions}
+- 搜索结果数量: {total}
+- 搜索结果列表: {results}
+
+### 任务要求：
+1. **搜索结果总结**（50-100字）：
+   - 用亲切的语言概括结果，如"为您找到5部适合6岁孩子的自然科学影片"。
+   - 若结果少，补充安慰性建议（如"试试调整年龄范围"）。
+
+2. **个性化推荐语**（每条30-60字）：
+   - 必须包含：
+     ✅ 教育价值（如"培养创造力/英语启蒙"）
+     ✅ 适龄特点（如"专为3-6岁设计"）
+     ✅ 趣味亮点（如"恐龙角色互动问答"）
+   - 确保推荐语和视频ID(aid)一一对应
+
+3. **引导性问题**（3个）：
+   - 基于用户查询的合理扩展（如查"恐龙"可问"想找科普类还是冒险类恐龙片？"）
+   - 包含年龄分层建议（如"您需要2-4岁还是5-8岁的内容？"）
+
+4. **相关性评分**（0-10分）：
+   - 评分标准：
+     7-10分：完全匹配用户查询意图
+     4-6分：部分匹配用户查询意图
+     0-3分：几乎不匹配用户查询意图
+   - 确保相关性评分和视频ID(aid)一一对应
+   - 个性化推荐词列表按相关性评分倒序
+
+### 输出格式（严格JSON）：
+{
+    "summary": "搜索结果总结",
+    "recommendations": [
+        {
+            "aid": "视频ID",
+            "title": "影片名",
+            "recommendation_text": "个性化推荐语",
+            "llm_score": "相关性评分"
+        }
+    ],
+    "suggestion": [
+        "是否需要更多数学启蒙类影片？",
+        "想找中文配音还是英文原版？",
+        "这些影片也适合亲子共看，需要推荐家庭互动版吗？"
+    ]
+}
+
+2025-03-31 18:56:56 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - LLM 返回的响应: {
+    "summary": "为您找到了5部以老鼠为主角的精彩影片，这些影片不仅充满乐趣，还能教会孩子们勇敢与智慧哦！",
+    "recommendations": [
+        {
+            "aid": "001",
+            "title": "小鼠大冒险",
+            "recommendation_text": "专为4-8岁设计，通过小鼠角色的勇敢探险培养孩子的勇气和解决问题的能力，还有有趣的互动环节。",
+            "llm_score": "9"
+        },
+        {
+            "aid": "002",
+            "title": "城市小鼠历险记",
+            "recommendation_text": "适合5岁以上儿童观看，故事中巧妙融入了友情的重要性，同时帮助孩子学习如何在集体中合作。",
+            "llm_score": "8"
+        },
+        {
+            "aid": "003",
+            "title": "魔法小鼠日记",
+            "recommendation_text": "特别推荐给6-10岁的孩子，这是一部关于发现自我价值的故事，激发孩子们的好奇心与探索精神。",
+            "llm_score": "7"
+        },
+        {
+            "aid": "004",
+            "title": "小鼠音乐家",
+            "recommendation_text": "面向3-7岁年龄段的小朋友，通过美妙的旋律介绍不同乐器，是进行音乐启蒙教育的好选择。",
+            "llm_score": "6"
+        },
+        {
+            "aid": "005",
+            "title": "小鼠侦探团",
+            "recommendation_text": "针对7岁以上的孩子们，结合悬疑元素讲述逻辑推理的故事，有助于提高孩子的观察力和思考能力。",
+            "llm_score": "5"
+        }
+    ],
+    "suggestion": [
+        "想找科普类还是冒险类的老鼠电影？",
+        "您需要2-4岁还是5-8岁的内容？",
+        "这些影片也适合亲子共看，需要推荐家庭互动版吗？"
+    ]
+}
+2025-03-31 18:56:56 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 结构化响应生成完成
+2025-03-31 19:05:18 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-03-31 19:05:18 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-03-31 19:05:18 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-03-31 19:05:18 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-03-31 19:05:18 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-03-31 19:05:18 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-03-31 19:05:18 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 19:05:42 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:05:42 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:05:42 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-03-31 19:05:42 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-03-31 19:05:43 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Starting HybridSearchSpringbootApplication using Java 17 with PID 39556 (D:\projects\hybrid-search-springboot\target\classes started by zhi25.liu in D:\projects\hybrid-search-springboot)
+2025-03-31 19:05:43 [main] DEBUG c.e.h.HybridSearchSpringbootApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-31 19:05:43 [main] INFO  c.e.h.HybridSearchSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 19:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-31 19:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:05:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-31 19:05:47 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-31 19:05:47 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:05:47 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-03-31 19:05:47 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-03-31 19:05:47 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:05:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 19:05:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 19:05:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-31 19:05:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 19:05:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5282 ms
+2025-03-31 19:05:50 [main] INFO  c.e.h.service.BGETokenizer - BGE Tokenizer加载成功
+2025-03-31 19:05:51 [main] INFO  c.e.h.service.BGEModelManager - BGE模型加载成功
+2025-03-31 19:05:54 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-03-31 19:05:54 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@7c680fe1 
+2025-03-31 19:05:55 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-03-31 19:05:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 19:05:55 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Started HybridSearchSpringbootApplication in 15.35 seconds (process running for 19.991)
+2025-03-31 19:05:55 [main] ERROR c.e.h.HybridSearchSpringbootApplication - --------------------启动成功--------------------
+2025-03-31 19:06:00 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 19:06:00 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 19:06:00 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-03-31 19:06:01 [http-nio-8080-exec-4] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+1. 精准识别意图并提取实体
+2. 生成3个搜索扩展词以提高搜索成功率
+
+**实体类型：**  
+- `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+- `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+- `actors`（演员）：出演的主要演员  
+- `directors`（导演）：执导的导演  
+- `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+**输出要求：**  
+1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+2. 扩展词需满足：  
+   - 必须是真实存在的搜索热词  
+   - 最接近用户查询意图的扩展词放在最前面
+   - 包含平台常用标签（如"4K修复版"）  
+   - 覆盖三种类型：  
+     • 官方名称变体  
+     • 民间流行叫法  
+     • 常见拼写错误/简称  
+
+**优化示例：**  
+用户查询: "周星驰演的粤语电影有哪些"  
+输出:  
+{
+    "title": [],  
+    "languages": ["粤语"],  
+    "actors": ["周星驰"],  
+    "directors": [],  
+    "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+}  
+
+用户查询: "有熊猫砍树的动画片?"  
+输出:  
+{
+    "title": ["功夫熊猫"],  
+    "languages": ["英语", "中文"],  
+    "actors": ["杰克·布莱克"],  
+    "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+    "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+}  
+
+**当前用户查询：**  
+{query} 
+2025-03-31 19:06:06 [http-nio-8080-exec-4] DEBUG c.e.h.service.ModelLoader - LLM 返回的原始响应: {
+    "title": ["料理鼠王"],
+    "languages": [],
+    "actors": ["帕顿·奥斯瓦尔特", "伊恩·霍姆"],
+    "directors": ["布拉德·伯德", "简·皮克瓦"],
+    "expansion_terms": ["Ratatouille电影", "美食总动员", "小老鼠大厨神"]
+}
+2025-03-31 19:06:06 [http-nio-8080-exec-4] DEBUG c.e.h.service.ModelLoader - 解析后的 JSON 结果: {title=[料理鼠王], languages=[], actors=[帕顿·奥斯瓦尔特, 伊恩·霍姆], directors=[布拉德·伯德, 简·皮克瓦], expansion_terms=[Ratatouille电影, 美食总动员, 小老鼠大厨神]}
+2025-03-31 19:06:06 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - 实体识别和扩展词生成结果: {title=[料理鼠王], languages=[], actors=[帕顿·奥斯瓦尔特, 伊恩·霍姆], directors=[布拉德·伯德, 简·皮克瓦], expansion_terms=[Ratatouille电影, 美食总动员, 小老鼠大厨神]}
+2025-03-31 19:06:06 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - 实体识别和语义扩展耗时: 5.469秒
+2025-03-31 19:06:06 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - 向量查询拼接结果: Ratatouille电影 美食总动员 小老鼠大厨神
+2025-03-31 19:06:06 [http-nio-8080-exec-4] INFO  c.e.h.service.BGEModelManager - 模型输出形状: [1][512][512]
+2025-03-31 19:06:06 [http-nio-8080-exec-4] INFO  c.e.h.service.BGEModelManager - 输入 tokenIds 长度: 512
+2025-03-31 19:06:07 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - ES搜索耗时: 0.7秒
+2025-03-31 19:06:07 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - 结果处理耗时: 0.0秒
+2025-03-31 19:06:07 [http-nio-8080-exec-4] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业少儿教育影片推荐助手，需根据儿童认知特点和家长需求生成友好且富有教育意义的回复。
+
+### 输入数据：
+- 用户查询: {query}
+- 识别到的实体（影片/角色/主题）: {entities}
+- 语义扩展词（年龄/教育目标/兴趣）: {expansions}
+- 搜索结果数量: {total}
+- 搜索结果列表: {results}
+
+### 任务要求：
+1. **搜索结果总结**（50-100字）：
+   - 用亲切的语言概括结果，如"为您找到5部适合6岁孩子的自然科学影片"。
+   - 若结果少，补充安慰性建议（如"试试调整年龄范围"）。
+
+2. **个性化推荐语**（每条30-60字）：
+   - 必须包含：
+     ✅ 教育价值（如"培养创造力/英语启蒙"）
+     ✅ 适龄特点（如"专为3-6岁设计"）
+     ✅ 趣味亮点（如"恐龙角色互动问答"）
+   - 确保推荐语和视频ID(aid)一一对应
+
+3. **引导性问题**（3个）：
+   - 基于用户查询的合理扩展（如查"恐龙"可问"想找科普类还是冒险类恐龙片？"）
+   - 包含年龄分层建议（如"您需要2-4岁还是5-8岁的内容？"）
+
+4. **相关性评分**（0-10分）：
+   - 评分标准：
+     7-10分：完全匹配用户查询意图
+     4-6分：部分匹配用户查询意图
+     0-3分：几乎不匹配用户查询意图
+   - 确保相关性评分和视频ID(aid)一一对应
+   - 个性化推荐词列表按相关性评分倒序
+
+### 输出格式（严格JSON）：
+{
+    "summary": "搜索结果总结",
+    "recommendations": [
+        {
+            "aid": "视频ID(results中对应的aid)",
+            "title": "影片名",
+            "recommendation_text": "个性化推荐语",
+            "llm_score": "相关性评分"
+        }
+    ],
+    "suggestion": [
+        "是否需要更多数学启蒙类影片？",
+        "想找中文配音还是英文原版？",
+        "这些影片也适合亲子共看，需要推荐家庭互动版吗？"
+    ]
+}
+
+2025-03-31 19:06:31 [http-nio-8080-exec-4] DEBUG c.e.h.service.ModelLoader - LLM 返回的响应: {
+    "summary": "为您找到了5部含有老鼠角色的精彩影片，非常适合小朋友观看！如果觉得选择还不够多，不妨尝试调整一下年龄范围或添加更多兴趣点哦。",
+    "recommendations": [
+        {
+            "aid": "1023456",
+            "title": "勇敢小鼠冒险记",
+            "recommendation_text": "培养勇气与团队合作精神，专为4-8岁孩子设计，充满趣味的小鼠探险故事。",
+            "llm_score": "9"
+        },
+        {
+            "aid": "1023457",
+            "title": "聪明的老鼠与城市秘密",
+            "recommendation_text": "激发孩子的好奇心和探索欲，适合6岁以上儿童，跟随智慧小鼠揭开城市之谜。",
+            "llm_score": "8"
+        },
+        {
+            "aid": "1023458",
+            "title": "小鼠音乐家",
+            "recommendation_text": "促进音乐感知力发展，专为3-7岁的孩子量身打造，享受美妙旋律的同时学习乐理知识。",
+            "llm_score": "7"
+        },
+        {
+            "aid": "1023459",
+            "title": "快乐农场：小小田鼠",
+            "recommendation_text": "教会孩子们关于自然的知识，适合2-6岁宝宝，通过可爱的田鼠朋友了解农作物生长过程。",
+            "llm_score": "6"
+        },
+        {
+            "aid": "1023460",
+            "title": "夜行动物派对",
+            "recommendation_text": "增强夜间动物的认知，面向5-10岁观众，夜晚森林里的奇妙聚会让人大开眼界。",
+            "llm_score": "5"
+        }
+    ],
+    "suggestion": [
+        "您更倾向于寻找哪类主题的老鼠电影？比如科普教育或是童话故事？",
+        "您的孩子处于哪个年龄段呢？这样我可以更好地推荐适合的内容。",
+        "这些影片中既有中文配音也有英文原版，您偏好哪种语言版本呢？"
+    ]
+}
+2025-03-31 19:06:31 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - 结构化响应生成完成
+2025-03-31 19:27:33 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-03-31 19:27:33 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-03-31 19:27:33 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-03-31 19:27:33 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-03-31 19:27:33 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-03-31 19:27:33 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-03-31 19:27:49 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:27:49 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:27:49 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-03-31 19:27:49 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-03-31 19:27:49 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Starting HybridSearchSpringbootApplication using Java 17 with PID 40984 (D:\projects\hybrid-search-springboot\target\classes started by zhi25.liu in D:\projects\hybrid-search-springboot)
+2025-03-31 19:27:49 [main] DEBUG c.e.h.HybridSearchSpringbootApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-31 19:27:49 [main] INFO  c.e.h.HybridSearchSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 19:27:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:27:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-31 19:27:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:27:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-31 19:27:52 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-31 19:27:52 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:27:52 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-03-31 19:27:52 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-03-31 19:27:52 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:27:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 19:27:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 19:27:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-31 19:27:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 19:27:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3551 ms
+2025-03-31 19:27:55 [main] INFO  c.e.h.service.BGETokenizer - BGE Tokenizer加载成功
+2025-03-31 19:27:57 [main] INFO  c.e.h.service.BGEModelManager - BGE模型加载成功
+2025-03-31 19:28:00 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-03-31 19:28:00 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@96c840a 
+2025-03-31 19:28:00 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-03-31 19:28:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 19:28:00 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Started HybridSearchSpringbootApplication in 11.926 seconds (process running for 14.395)
+2025-03-31 19:28:00 [main] ERROR c.e.h.HybridSearchSpringbootApplication - --------------------启动成功--------------------
+2025-03-31 19:28:01 [RMI TCP Connection(19)-172.29.16.1] WARN  o.s.b.a.d.e.ElasticsearchReactiveHealthIndicator - Elasticsearch health check failed
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-31 19:28:05 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 19:28:05 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 19:28:05 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-31 19:28:05 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+1. 精准识别意图并提取实体
+2. 生成3个搜索扩展词以提高搜索成功率
+
+**实体类型：**  
+- `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+- `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+- `actors`（演员）：出演的主要演员  
+- `directors`（导演）：执导的导演  
+- `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+**输出要求：**  
+1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+2. 扩展词需满足：  
+   - 必须是真实存在的搜索热词  
+   - 最接近用户查询意图的扩展词放在最前面
+   - 包含平台常用标签（如"4K修复版"）  
+   - 覆盖三种类型：  
+     • 官方名称变体  
+     • 民间流行叫法  
+     • 常见拼写错误/简称  
+
+**优化示例：**  
+用户查询: "周星驰演的粤语电影有哪些"  
+输出:  
+{
+    "title": [],  
+    "languages": ["粤语"],  
+    "actors": ["周星驰"],  
+    "directors": [],  
+    "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+}  
+
+用户查询: "有熊猫砍树的动画片?"  
+输出:  
+{
+    "title": ["功夫熊猫"],  
+    "languages": ["英语", "中文"],  
+    "actors": ["杰克·布莱克"],  
+    "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+    "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+}  
+
+**当前用户查询：**  
+{query} 
+2025-03-31 19:28:08 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - LLM 返回的原始响应: {
+    "title": ["料理鼠王"],
+    "languages": [],
+    "actors": [],
+    "directors": ["布拉德·伯德"],
+    "expansion_terms": ["美食总动员", "Ratatouille动画电影", "小老鼠大厨神"]
+}
+2025-03-31 19:28:08 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 解析后的 JSON 结果: {title=[料理鼠王], languages=[], actors=[], directors=[布拉德·伯德], expansion_terms=[美食总动员, Ratatouille动画电影, 小老鼠大厨神]}
+2025-03-31 19:28:08 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 实体识别和扩展词生成结果: {title=[料理鼠王], languages=[], actors=[], directors=[布拉德·伯德], expansion_terms=[美食总动员, Ratatouille动画电影, 小老鼠大厨神]}
+2025-03-31 19:28:08 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 实体识别和语义扩展耗时: 2.951秒
+2025-03-31 19:28:08 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 向量查询拼接结果: 美食总动员 Ratatouille动画电影 小老鼠大厨神
+2025-03-31 19:28:08 [http-nio-8080-exec-2] INFO  c.e.h.service.BGEModelManager - 模型输出形状: [1][512][512]
+2025-03-31 19:28:08 [http-nio-8080-exec-2] INFO  c.e.h.service.BGEModelManager - 输入 tokenIds 长度: 512
+2025-03-31 19:28:09 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - ES搜索耗时: 0.781秒
+2025-03-31 19:28:09 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 结果处理耗时: 0.0秒
+2025-03-31 19:28:09 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业少儿教育影片推荐助手，需根据儿童认知特点和家长需求生成友好且富有教育意义的回复。
+
+### 输入数据：
+- 用户查询: {query}
+- 识别到的实体（影片/角色/主题）: {entities}
+- 语义扩展词（年龄/教育目标/兴趣）: {expansions}
+- 搜索结果数量: {total}
+- 搜索结果列表: {results}
+
+### 任务要求：
+1. **搜索结果总结**（50-100字）：
+   - 用亲切的语言概括结果，如"为您找到5部适合6岁孩子的自然科学影片"。
+   - 若结果少，补充安慰性建议（如"试试调整年龄范围"）。
+
+2. **个性化推荐语**（每条30-60字）：
+   - 必须包含：
+     ✅ 教育价值（如"培养创造力/英语启蒙"）
+     ✅ 适龄特点（如"专为3-6岁设计"）
+     ✅ 趣味亮点（如"恐龙角色互动问答"）
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 推荐语必须与传入的 aid 一一对应
+
+3. **引导性问题**（3个）：
+   - 基于用户查询的合理扩展（如查"恐龙"可问"想找科普类还是冒险类恐龙片？"）
+   - 包含年龄分层建议（如"您需要2-4岁还是5-8岁的内容？"）
+
+4. **相关性评分**（0-10分）：
+   - 评分标准：
+     7-10分：完全匹配用户查询意图
+     4-6分：部分匹配用户查询意图
+     0-3分：几乎不匹配用户查询意图
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 评分必须与传入的 aid 一一对应
+   - 个性化推荐词列表按相关性评分倒序
+
+### 输出格式（严格JSON）：
+{
+    "summary": "搜索结果总结",
+    "recommendations": [
+        {
+            "aid": "必须使用传入的 results 中的 aid",
+            "title": "影片名",
+            "recommendation_text": "个性化推荐语",
+            "llm_score": "相关性评分"
+        }
+    ],
+    "suggestion": [
+        "是否需要更多数学启蒙类影片？",
+        "想找中文配音还是英文原版？",
+        "这些影片也适合亲子共看，需要推荐家庭互动版吗？"
+    ]
+}
+
+### 重要提示：
+1. 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+2. 每个推荐必须对应一个传入的 aid
+3. 不能添加或删除传入的 aid
+4. 不能修改传入的 aid 的值
+
+2025-03-31 19:28:39 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - LLM 返回的响应: 为了更好地提供推荐，请允许我假设一些可能的输入数据，因为实际的数据（如`{query}`、`{entities}`等）没有直接给出。基于您的请求“我想看有老鼠的电影”，我将构造一个合理的示例来展示如何生成响应。
+
+### 假设的输入数据
+- 用户查询: 我想看有老鼠的电影
+- 识别到的实体（影片/角色/主题）: 老鼠, 动画
+- 语义扩展词（年龄/教育目标/兴趣）: 4-8岁, 创意想象
+- 搜索结果数量: 3
+- 搜索结果列表: 
+  - [{"aid":"001","title":"小小侦探鼠"}, {"aid":"002","title":"快乐农场故事"}, {"aid":"003","title":"魔法小鼠历险记"}]
+
+### 输出
+```json
+{
+    "summary": "为您找到了3部适合4-8岁孩子的动画片，都以可爱的老鼠为主角哦！每部影片都能激发孩子们的想象力。",
+    "recommendations": [
+        {
+            "aid": "003",
+            "title": "魔法小鼠历险记",
+            "recommendation_text": "专为5-8岁设计，通过一场奇幻旅程培养孩子的创意想象能力，加入勇敢的小鼠一起探索未知世界吧！",
+            "llm_score": "9"
+        },
+        {
+            "aid": "001",
+            "title": "小小侦探鼠",
+            "recommendation_text": "面向4-6岁的孩子，跟着聪明机智的小鼠解决谜题，不仅锻炼逻辑思维，还能学习基础英语词汇。",
+            "llm_score": "8"
+        },
+        {
+            "aid": "002",
+            "title": "快乐农场故事",
+            "recommendation_text": "适合4岁以上儿童观看，讲述农场上一只活泼好动的小鼠与朋友们之间的温馨故事，寓教于乐，增进友情理解。",
+            "llm_score": "7"
+        }
+    ],
+    "suggestion": [
+        "您更倾向于找寻哪种类型的老鼠电影？比如冒险类还是日常生活类？",
+        "您希望这些影片是中文配音还是英文原版呢？",
+        "如果想要更多互动性内容，是否考虑选择那些支持亲子共玩的游戏式影片？"
+    ]
+}
+```
+
+此回答按照要求构建了一个完整的JSON格式回复，并根据给定的场景和信息进行了合理填充。如果有具体的数据或需求，请随时告知以便进一步调整。
+2025-03-31 19:28:39 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 结构化响应生成完成
+2025-03-31 19:28:39 [http-nio-8080-exec-2] ERROR c.e.h.service.SearchService - 解析结构化响应失败
+com.fasterxml.jackson.core.JsonParseException: Unrecognized token '为了更好地提供推荐': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2584)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2610)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2618)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:825)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3017)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2051)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:780)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:5018)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4921)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3868)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3836)
+	at com.example.hybridsearchspringboot.service.SearchService.hybridSearch(SearchService.java:106)
+	at com.example.hybridsearchspringboot.controller.SearchController.search(SearchController.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-31 19:28:39 [http-nio-8080-exec-2] ERROR c.e.h.service.SearchService - 混合搜索失败
+java.lang.RuntimeException: 解析结构化响应失败
+	at com.example.hybridsearchspringboot.service.SearchService.hybridSearch(SearchService.java:158)
+	at com.example.hybridsearchspringboot.controller.SearchController.search(SearchController.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '为了更好地提供推荐': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2584)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2610)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2618)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:825)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3017)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2051)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:780)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:5018)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4921)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3868)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3836)
+	at com.example.hybridsearchspringboot.service.SearchService.hybridSearch(SearchService.java:106)
+	... 55 common frames omitted
+2025-03-31 19:28:39 [http-nio-8080-exec-2] ERROR c.e.h.controller.SearchController - Error processing search request
+java.lang.RuntimeException: 混合搜索失败
+	at com.example.hybridsearchspringboot.service.SearchService.hybridSearch(SearchService.java:164)
+	at com.example.hybridsearchspringboot.controller.SearchController.search(SearchController.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.RuntimeException: 解析结构化响应失败
+	at com.example.hybridsearchspringboot.service.SearchService.hybridSearch(SearchService.java:158)
+	... 55 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '为了更好地提供推荐': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 10]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2584)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2610)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2618)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:825)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3017)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2051)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:780)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:5018)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4921)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3868)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3836)
+	at com.example.hybridsearchspringboot.service.SearchService.hybridSearch(SearchService.java:106)
+	... 55 common frames omitted
+2025-03-31 19:30:33 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-03-31 19:30:33 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-03-31 19:30:33 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-03-31 19:30:33 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-03-31 19:30:33 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-03-31 19:30:33 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-03-31 19:30:33 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 19:30:46 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:30:46 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:30:46 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-03-31 19:30:46 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-03-31 19:30:46 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Starting HybridSearchSpringbootApplication using Java 17 with PID 35984 (D:\projects\hybrid-search-springboot\target\classes started by zhi25.liu in D:\projects\hybrid-search-springboot)
+2025-03-31 19:30:46 [main] DEBUG c.e.h.HybridSearchSpringbootApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-31 19:30:46 [main] INFO  c.e.h.HybridSearchSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 19:30:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:30:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-31 19:30:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:30:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-31 19:30:48 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-31 19:30:48 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:30:48 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-03-31 19:30:48 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-03-31 19:30:48 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:30:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 19:30:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 19:30:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-31 19:30:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 19:30:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2191 ms
+2025-03-31 19:30:49 [main] INFO  c.e.h.service.BGETokenizer - BGE Tokenizer加载成功
+2025-03-31 19:30:51 [main] INFO  c.e.h.service.BGEModelManager - BGE模型加载成功
+2025-03-31 19:30:54 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-03-31 19:30:54 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@1e49a77e 
+2025-03-31 19:30:54 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-03-31 19:30:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 19:30:54 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Started HybridSearchSpringbootApplication in 9.08 seconds (process running for 10.97)
+2025-03-31 19:30:54 [main] ERROR c.e.h.HybridSearchSpringbootApplication - --------------------启动成功--------------------
+2025-03-31 19:30:54 [RMI TCP Connection(4)-172.29.16.1] WARN  o.s.b.a.d.e.ElasticsearchReactiveHealthIndicator - Elasticsearch health check failed
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-31 19:31:01 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 19:31:01 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 19:31:01 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-03-31 19:31:01 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+1. 精准识别意图并提取实体
+2. 生成3个搜索扩展词以提高搜索成功率
+
+**实体类型：**  
+- `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+- `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+- `actors`（演员）：出演的主要演员  
+- `directors`（导演）：执导的导演  
+- `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+**输出要求：**  
+1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+2. 扩展词需满足：  
+   - 必须是真实存在的搜索热词  
+   - 最接近用户查询意图的扩展词放在最前面
+   - 包含平台常用标签（如"4K修复版"）  
+   - 覆盖三种类型：  
+     • 官方名称变体  
+     • 民间流行叫法  
+     • 常见拼写错误/简称  
+
+**优化示例：**  
+用户查询: "周星驰演的粤语电影有哪些"  
+输出:  
+{
+    "title": [],  
+    "languages": ["粤语"],  
+    "actors": ["周星驰"],  
+    "directors": [],  
+    "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+}  
+
+用户查询: "有熊猫砍树的动画片?"  
+输出:  
+{
+    "title": ["功夫熊猫"],  
+    "languages": ["英语", "中文"],  
+    "actors": ["杰克·布莱克"],  
+    "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+    "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+}  
+
+**当前用户查询：**  
+{query} 
+2025-03-31 19:31:05 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - LLM 返回的原始响应: {
+    "title": ["美食总动员"],
+    "languages": [],
+    "actors": [],
+    "directors": ["布拉德·伯德"],
+    "expansion_terms": ["Ratatouille电影", "小鼠大厨", "老鼠厨师动画片"]
+}
+2025-03-31 19:31:05 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - 解析后的 JSON 结果: {title=[美食总动员], languages=[], actors=[], directors=[布拉德·伯德], expansion_terms=[Ratatouille电影, 小鼠大厨, 老鼠厨师动画片]}
+2025-03-31 19:31:05 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 实体识别和扩展词生成结果: {title=[美食总动员], languages=[], actors=[], directors=[布拉德·伯德], expansion_terms=[Ratatouille电影, 小鼠大厨, 老鼠厨师动画片]}
+2025-03-31 19:31:05 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 实体识别和语义扩展耗时: 4.039秒
+2025-03-31 19:31:05 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 向量查询拼接结果: Ratatouille电影 小鼠大厨 老鼠厨师动画片
+2025-03-31 19:31:06 [http-nio-8080-exec-3] INFO  c.e.h.service.BGEModelManager - 模型输出形状: [1][512][512]
+2025-03-31 19:31:06 [http-nio-8080-exec-3] INFO  c.e.h.service.BGEModelManager - 输入 tokenIds 长度: 512
+2025-03-31 19:31:06 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - ES搜索耗时: 0.87秒
+2025-03-31 19:31:06 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 结果处理耗时: 0.0秒
+2025-03-31 19:31:06 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业少儿教育影片推荐助手，需根据儿童认知特点和家长需求生成友好且富有教育意义的回复。
+
+### 输入数据：
+- 用户查询: {query}
+- 识别到的实体（影片/角色/主题）: {entities}
+- 语义扩展词（年龄/教育目标/兴趣）: {expansions}
+- 搜索结果数量: {total}
+- 搜索结果列表: {results}
+
+### 任务要求：
+1. **搜索结果总结**（50-100字）：
+   - 用亲切的语言概括结果，如"为您找到5部适合6岁孩子的自然科学影片"。
+   - 若结果少，补充安慰性建议（如"试试调整年龄范围"）。
+
+2. **个性化推荐语**（每条30-60字）：
+   - 必须包含：
+     ✅ 教育价值（如"培养创造力/英语启蒙"）
+     ✅ 适龄特点（如"专为3-6岁设计"）
+     ✅ 趣味亮点（如"恐龙角色互动问答"）
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 推荐语必须与传入的 aid 一一对应
+
+3. **引导性问题**（3个）：
+   - 基于用户查询的合理扩展（如查"恐龙"可问"想找科普类还是冒险类恐龙片？"）
+   - 包含年龄分层建议（如"您需要2-4岁还是5-8岁的内容？"）
+
+4. **相关性评分**（0-10分）：
+   - 评分标准：
+     7-10分：完全匹配用户查询意图
+     4-6分：部分匹配用户查询意图
+     0-3分：几乎不匹配用户查询意图
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 评分必须与传入的 aid 一一对应
+   - 个性化推荐词列表按相关性评分倒序
+
+### 输出格式（严格JSON）：
+{
+    "summary": "搜索结果总结",
+    "recommendations": [
+        {
+            "aid": "必须使用传入的 results 中的 aid",
+            "title": "影片名",
+            "recommendation_text": "个性化推荐语",
+            "llm_score": "相关性评分"
+        }
+    ],
+    "suggestion": [
+        "是否需要更多数学启蒙类影片？",
+        "想找中文配音还是英文原版？",
+        "这些影片也适合亲子共看，需要推荐家庭互动版吗？"
+    ]
+}
+
+### 重要提示：
+1. 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+2. 每个推荐必须对应一个传入的 aid
+3. 不能添加或删除传入的 aid
+4. 不能修改传入的 aid 的值
+
+2025-03-31 19:31:11 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - LLM 返回的响应: 请提供更详细的输入数据，包括但不限于用户查询的具体内容（如：{query}）、识别到的实体（如：{entities}）、语义扩展词（如：{expansions}）以及搜索结果列表（如：{results}）。这样我才能根据您提供的信息生成符合要求的回复。例如，您可以告诉我具体想要了解的老鼠电影有哪些，或者对电影有什么特别的要求（比如适合哪个年龄段的孩子观看等）。
+2025-03-31 19:31:11 [http-nio-8080-exec-3] ERROR c.e.h.service.ModelLoader - LLM返回的不是有效的JSON格式: 请提供更详细的输入数据，包括但不限于用户查询的具体内容（如：{query}）、识别到的实体（如：{entities}）、语义扩展词（如：{expansions}）以及搜索结果列表（如：{results}）。这样我才能根据您提供的信息生成符合要求的回复。例如，您可以告诉我具体想要了解的老鼠电影有哪些，或者对电影有什么特别的要求（比如适合哪个年龄段的孩子观看等）。
+2025-03-31 19:31:11 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 结构化响应生成完成
+2025-03-31 19:36:15 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-03-31 19:36:15 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-03-31 19:36:15 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-03-31 19:36:15 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-03-31 19:36:15 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-03-31 19:36:15 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-03-31 19:36:15 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 19:36:18 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-31 19:36:31 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:36:31 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:36:31 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-03-31 19:36:31 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-03-31 19:36:31 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Starting HybridSearchSpringbootApplication using Java 17 with PID 19620 (D:\projects\hybrid-search-springboot\target\classes started by zhi25.liu in D:\projects\hybrid-search-springboot)
+2025-03-31 19:36:31 [main] DEBUG c.e.h.HybridSearchSpringbootApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-31 19:36:31 [main] INFO  c.e.h.HybridSearchSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 19:36:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:36:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-31 19:36:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:36:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-31 19:36:33 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-31 19:36:33 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:36:33 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-03-31 19:36:33 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-03-31 19:36:33 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:36:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 19:36:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 19:36:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-31 19:36:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 19:36:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2664 ms
+2025-03-31 19:36:35 [main] INFO  c.e.h.service.BGETokenizer - BGE Tokenizer加载成功
+2025-03-31 19:36:40 [main] INFO  c.e.h.service.BGEModelManager - BGE模型加载成功
+2025-03-31 19:36:43 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-03-31 19:36:43 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@46c9ee28 
+2025-03-31 19:36:43 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-03-31 19:36:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 19:36:43 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Started HybridSearchSpringbootApplication in 13.641 seconds (process running for 15.825)
+2025-03-31 19:36:43 [main] ERROR c.e.h.HybridSearchSpringbootApplication - --------------------启动成功--------------------
+2025-03-31 19:36:44 [RMI TCP Connection(4)-172.29.16.1] WARN  o.s.b.a.d.e.ElasticsearchReactiveHealthIndicator - Elasticsearch health check failed
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-31 19:36:45 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 19:36:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 19:36:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-31 19:36:45 [http-nio-8080-exec-1] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+1. 精准识别意图并提取实体
+2. 生成3个搜索扩展词以提高搜索成功率
+
+**实体类型：**  
+- `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+- `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+- `actors`（演员）：出演的主要演员  
+- `directors`（导演）：执导的导演  
+- `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+**输出要求：**  
+1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+2. 扩展词需满足：  
+   - 必须是真实存在的搜索热词  
+   - 最接近用户查询意图的扩展词放在最前面
+   - 包含平台常用标签（如"4K修复版"）  
+   - 覆盖三种类型：  
+     • 官方名称变体  
+     • 民间流行叫法  
+     • 常见拼写错误/简称  
+
+**优化示例：**  
+用户查询: "周星驰演的粤语电影有哪些"  
+输出:  
+{
+    "title": [],  
+    "languages": ["粤语"],  
+    "actors": ["周星驰"],  
+    "directors": [],  
+    "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+}  
+
+用户查询: "有熊猫砍树的动画片?"  
+输出:  
+{
+    "title": ["功夫熊猫"],  
+    "languages": ["英语", "中文"],  
+    "actors": ["杰克·布莱克"],  
+    "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+    "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+}  
+
+**当前用户查询：**  
+{query} 
+2025-03-31 19:36:49 [http-nio-8080-exec-1] DEBUG c.e.h.service.ModelLoader - LLM 返回的原始响应: {
+    "title": ["精灵鼠小弟", "料理鼠王", "艾特熊和赛娜鼠"],
+    "languages": [],
+    "actors": [],
+    "directors": [],
+    "expansion_terms": ["老鼠电影推荐", "动画片老鼠", "关于老鼠的电影"]
+}
+2025-03-31 19:36:49 [http-nio-8080-exec-1] DEBUG c.e.h.service.ModelLoader - 解析后的 JSON 结果: {title=[精灵鼠小弟, 料理鼠王, 艾特熊和赛娜鼠], languages=[], actors=[], directors=[], expansion_terms=[老鼠电影推荐, 动画片老鼠, 关于老鼠的电影]}
+2025-03-31 19:36:49 [http-nio-8080-exec-1] INFO  c.e.h.service.SearchService - 实体识别和扩展词生成结果: {title=[精灵鼠小弟, 料理鼠王, 艾特熊和赛娜鼠], languages=[], actors=[], directors=[], expansion_terms=[老鼠电影推荐, 动画片老鼠, 关于老鼠的电影]}
+2025-03-31 19:36:49 [http-nio-8080-exec-1] INFO  c.e.h.service.SearchService - 实体识别和语义扩展耗时: 4.142秒
+2025-03-31 19:36:49 [http-nio-8080-exec-1] INFO  c.e.h.service.SearchService - 向量查询拼接结果: 老鼠电影推荐 动画片老鼠 关于老鼠的电影
+2025-03-31 19:36:49 [http-nio-8080-exec-1] INFO  c.e.h.service.BGEModelManager - 模型输出形状: [1][512][512]
+2025-03-31 19:36:49 [http-nio-8080-exec-1] INFO  c.e.h.service.BGEModelManager - 输入 tokenIds 长度: 512
+2025-03-31 19:36:50 [http-nio-8080-exec-1] INFO  c.e.h.service.SearchService - ES搜索耗时: 0.669秒
+2025-03-31 19:36:50 [http-nio-8080-exec-1] INFO  c.e.h.service.SearchService - 结果处理耗时: 0.0秒
+2025-03-31 19:36:50 [http-nio-8080-exec-1] ERROR c.e.h.service.ModelLoader - 生成结构化响应失败
+java.lang.NullPointerException: Cannot invoke "java.util.Collection.toArray()" because "c" is null
+	at java.base/java.util.ArrayList.addAll(ArrayList.java:670)
+	at com.example.hybridsearchspringboot.service.ModelLoader.lambda$generateStructuredResponse$0(ModelLoader.java:107)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.example.hybridsearchspringboot.service.ModelLoader.generateStructuredResponse(ModelLoader.java:112)
+	at com.example.hybridsearchspringboot.service.SearchService.hybridSearch(SearchService.java:91)
+	at com.example.hybridsearchspringboot.controller.SearchController.search(SearchController.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-31 19:36:50 [http-nio-8080-exec-1] INFO  c.e.h.service.SearchService - 结构化响应生成完成
+2025-03-31 19:37:22 [http-nio-8080-exec-4] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+1. 精准识别意图并提取实体
+2. 生成3个搜索扩展词以提高搜索成功率
+
+**实体类型：**  
+- `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+- `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+- `actors`（演员）：出演的主要演员  
+- `directors`（导演）：执导的导演  
+- `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+**输出要求：**  
+1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+2. 扩展词需满足：  
+   - 必须是真实存在的搜索热词  
+   - 最接近用户查询意图的扩展词放在最前面
+   - 包含平台常用标签（如"4K修复版"）  
+   - 覆盖三种类型：  
+     • 官方名称变体  
+     • 民间流行叫法  
+     • 常见拼写错误/简称  
+
+**优化示例：**  
+用户查询: "周星驰演的粤语电影有哪些"  
+输出:  
+{
+    "title": [],  
+    "languages": ["粤语"],  
+    "actors": ["周星驰"],  
+    "directors": [],  
+    "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+}  
+
+用户查询: "有熊猫砍树的动画片?"  
+输出:  
+{
+    "title": ["功夫熊猫"],  
+    "languages": ["英语", "中文"],  
+    "actors": ["杰克·布莱克"],  
+    "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+    "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+}  
+
+**当前用户查询：**  
+{query} 
+2025-03-31 19:37:27 [http-nio-8080-exec-4] DEBUG c.e.h.service.ModelLoader - LLM 返回的原始响应: {
+    "title": ["料理鼠王", "精灵鼠小弟", "猫和老鼠"],
+    "languages": [],
+    "actors": [],
+    "directors": [],
+    "expansion_terms": ["ratatouille动画电影", "stuart little全集", "Tom and Jerry大电影"]
+}
+2025-03-31 19:37:27 [http-nio-8080-exec-4] DEBUG c.e.h.service.ModelLoader - 解析后的 JSON 结果: {title=[料理鼠王, 精灵鼠小弟, 猫和老鼠], languages=[], actors=[], directors=[], expansion_terms=[ratatouille动画电影, stuart little全集, Tom and Jerry大电影]}
+2025-03-31 19:37:27 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - 实体识别和扩展词生成结果: {title=[料理鼠王, 精灵鼠小弟, 猫和老鼠], languages=[], actors=[], directors=[], expansion_terms=[ratatouille动画电影, stuart little全集, Tom and Jerry大电影]}
+2025-03-31 19:37:27 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - 实体识别和语义扩展耗时: 5.029秒
+2025-03-31 19:37:27 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - 向量查询拼接结果: ratatouille动画电影 stuart little全集 Tom and Jerry大电影
+2025-03-31 19:37:28 [http-nio-8080-exec-4] INFO  c.e.h.service.BGEModelManager - 模型输出形状: [1][512][512]
+2025-03-31 19:37:28 [http-nio-8080-exec-4] INFO  c.e.h.service.BGEModelManager - 输入 tokenIds 长度: 512
+2025-03-31 19:37:28 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - ES搜索耗时: 0.334秒
+2025-03-31 19:37:28 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - 结果处理耗时: 0.0秒
+2025-03-31 19:37:28 [http-nio-8080-exec-4] ERROR c.e.h.service.ModelLoader - 生成结构化响应失败
+java.lang.NullPointerException: Cannot invoke "java.util.Collection.toArray()" because "c" is null
+	at java.base/java.util.ArrayList.addAll(ArrayList.java:670)
+	at com.example.hybridsearchspringboot.service.ModelLoader.lambda$generateStructuredResponse$0(ModelLoader.java:107)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.example.hybridsearchspringboot.service.ModelLoader.generateStructuredResponse(ModelLoader.java:112)
+	at com.example.hybridsearchspringboot.service.SearchService.hybridSearch(SearchService.java:91)
+	at com.example.hybridsearchspringboot.controller.SearchController.search(SearchController.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-31 19:37:28 [http-nio-8080-exec-4] INFO  c.e.h.service.SearchService - 结构化响应生成完成
+2025-03-31 19:40:18 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-03-31 19:40:18 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-03-31 19:40:18 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-03-31 19:40:18 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-03-31 19:40:18 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-03-31 19:40:18 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-03-31 19:40:18 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 19:40:31 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:40:31 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:40:31 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-03-31 19:40:31 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-03-31 19:40:31 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Starting HybridSearchSpringbootApplication using Java 17 with PID 19776 (D:\projects\hybrid-search-springboot\target\classes started by zhi25.liu in D:\projects\hybrid-search-springboot)
+2025-03-31 19:40:31 [main] DEBUG c.e.h.HybridSearchSpringbootApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-31 19:40:31 [main] INFO  c.e.h.HybridSearchSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 19:40:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:40:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-31 19:40:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:40:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-31 19:40:33 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-31 19:40:33 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:40:33 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-03-31 19:40:33 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-03-31 19:40:33 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:40:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 19:40:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 19:40:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-31 19:40:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 19:40:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2067 ms
+2025-03-31 19:40:34 [main] INFO  c.e.h.service.BGETokenizer - BGE Tokenizer加载成功
+2025-03-31 19:40:36 [main] INFO  c.e.h.service.BGEModelManager - BGE模型加载成功
+2025-03-31 19:40:38 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-03-31 19:40:38 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@2bbaf983 
+2025-03-31 19:40:39 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-03-31 19:40:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 19:40:39 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Started HybridSearchSpringbootApplication in 8.746 seconds (process running for 10.426)
+2025-03-31 19:40:39 [main] ERROR c.e.h.HybridSearchSpringbootApplication - --------------------启动成功--------------------
+2025-03-31 19:40:39 [RMI TCP Connection(1)-172.29.16.1] WARN  o.s.b.a.d.e.ElasticsearchReactiveHealthIndicator - Elasticsearch health check failed
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-31 19:40:55 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 19:40:55 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 19:40:55 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-03-31 19:40:55 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+1. 精准识别意图并提取实体
+2. 生成3个搜索扩展词以提高搜索成功率
+
+**实体类型：**  
+- `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+- `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+- `actors`（演员）：出演的主要演员  
+- `directors`（导演）：执导的导演  
+- `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+**输出要求：**  
+1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+2. 扩展词需满足：  
+   - 必须是真实存在的搜索热词  
+   - 最接近用户查询意图的扩展词放在最前面
+   - 包含平台常用标签（如"4K修复版"）  
+   - 覆盖三种类型：  
+     • 官方名称变体  
+     • 民间流行叫法  
+     • 常见拼写错误/简称  
+
+**优化示例：**  
+用户查询: "周星驰演的粤语电影有哪些"  
+输出:  
+{
+    "title": [],  
+    "languages": ["粤语"],  
+    "actors": ["周星驰"],  
+    "directors": [],  
+    "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+}  
+
+用户查询: "有熊猫砍树的动画片?"  
+输出:  
+{
+    "title": ["功夫熊猫"],  
+    "languages": ["英语", "中文"],  
+    "actors": ["杰克·布莱克"],  
+    "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+    "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+}  
+
+**当前用户查询：**  
+{query} 
+2025-03-31 19:41:01 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - LLM 返回的原始响应: {
+    "title": ["料理鼠王", "精灵鼠小弟", "猫和老鼠"],
+    "languages": [],
+    "actors": [],
+    "directors": [],
+    "expansion_terms": ["Ratatouille动画电影", "Stuart Little全集", "Tom and Jerry大电影"]
+}
+2025-03-31 19:41:01 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 解析后的 JSON 结果: {title=[料理鼠王, 精灵鼠小弟, 猫和老鼠], languages=[], actors=[], directors=[], expansion_terms=[Ratatouille动画电影, Stuart Little全集, Tom and Jerry大电影]}
+2025-03-31 19:41:01 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 实体识别和扩展词生成结果: {title=[料理鼠王, 精灵鼠小弟, 猫和老鼠], languages=[], actors=[], directors=[], expansion_terms=[Ratatouille动画电影, Stuart Little全集, Tom and Jerry大电影]}
+2025-03-31 19:41:01 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 实体识别和语义扩展耗时: 5.992秒
+2025-03-31 19:41:01 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 向量查询拼接结果: Ratatouille动画电影 Stuart Little全集 Tom and Jerry大电影
+2025-03-31 19:41:02 [http-nio-8080-exec-2] INFO  c.e.h.service.BGEModelManager - 模型输出形状: [1][512][512]
+2025-03-31 19:41:02 [http-nio-8080-exec-2] INFO  c.e.h.service.BGEModelManager - 输入 tokenIds 长度: 512
+2025-03-31 19:41:02 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - ES搜索耗时: 1.157秒
+2025-03-31 19:41:02 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 结果处理耗时: 0.001秒
+2025-03-31 19:41:02 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业少儿教育影片推荐助手，需根据儿童认知特点和家长需求生成友好且富有教育意义的回复。
+
+### 输入数据：
+- 用户查询: {query}
+- 识别到的实体（影片/角色/主题）: {entities}
+- 语义扩展词（年龄/教育目标/兴趣）: {expansions}
+- 搜索结果数量: {total}
+- 搜索结果列表: {results}
+
+### 任务要求：
+1. **搜索结果总结**（50-100字）：
+   - 用亲切的语言概括结果，如"为您找到5部适合6岁孩子的自然科学影片"。
+   - 若结果少，补充安慰性建议（如"试试调整年龄范围"）。
+
+2. **个性化推荐语**（每条30-60字）：
+   - 必须包含：
+     ✅ 教育价值（如"培养创造力/英语启蒙"）
+     ✅ 适龄特点（如"专为3-6岁设计"）
+     ✅ 趣味亮点（如"恐龙角色互动问答"）
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 推荐语必须与传入的 aid 一一对应
+
+3. **引导性问题**（3个）：
+   - 基于用户查询的合理扩展（如查"恐龙"可问"想找科普类还是冒险类恐龙片？"）
+   - 包含年龄分层建议（如"您需要2-4岁还是5-8岁的内容？"）
+
+4. **相关性评分**（0-10分）：
+   - 评分标准：
+     7-10分：完全匹配用户查询意图
+     4-6分：部分匹配用户查询意图
+     0-3分：几乎不匹配用户查询意图
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 评分必须与传入的 aid 一一对应
+   - 个性化推荐词列表按相关性评分倒序
+
+### 输出格式（必须严格遵循以下JSON格式）：
+{
+    "summary": "搜索结果总结",
+    "recommendations": [
+        {
+            "aid": "必须使用传入的 results 中的 aid",
+            "title": "影片名",
+            "recommendation_text": "个性化推荐语",
+            "llm_score": "相关性评分"
+        }
+    ],
+    "suggestion": [
+        "是否需要更多数学启蒙类影片？",
+        "想找中文配音还是英文原版？",
+        "这些影片也适合亲子共看，需要推荐家庭互动版吗？"
+    ]
+}
+
+### 重要提示：
+1. 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+2. 每个推荐必须对应一个传入的 aid
+3. 不能添加或删除传入的 aid
+4. 不能修改传入的 aid 的值
+5. 必须严格按照上述 JSON 格式返回，不要添加任何其他文本或说明
+6. 不要使用 Markdown 代码块标记
+7. 确保返回的是有效的 JSON 格式，可以被解析
+
+2025-03-31 19:51:44 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - LLM 返回的响应: {
+    "summary": "为您找到了5部含有老鼠角色的可爱动画电影，这些影片都非常适合小朋友观看哦！",
+    "recommendations": [
+        {
+            "aid": "1",
+            "title": "精灵鼠小弟",
+            "recommendation_text": "培养勇气与智慧，专为4-8岁设计，跟随勇敢的小白鼠踏上奇妙冒险。",
+            "llm_score": "9"
+        },
+        {
+            "aid": "2",
+            "title": "猫和老鼠",
+            "recommendation_text": "提高幽默感，适合3岁以上的孩子，看汤姆猫和杰瑞鼠如何斗智斗勇。",
+            "llm_score": "8"
+        },
+        {
+            "aid": "3",
+            "title": "美食总动员",
+            "recommendation_text": "激发创造力与梦想，推荐给5-10岁的孩子，一只爱烹饪的老鼠的故事。",
+            "llm_score": "7"
+        },
+        {
+            "aid": "4",
+            "title": "小鼠大厨",
+            "recommendation_text": "鼓励追求梦想，专为6-12岁设计，讲述一只梦想成为厨师的小老鼠。",
+            "llm_score": "6"
+        },
+        {
+            "aid": "5",
+            "title": "鼠来宝",
+            "recommendation_text": "音乐启蒙，适合2-6岁的宝宝，三只可爱的花栗鼠带来的欢乐旋律。",
+            "llm_score": "5"
+        }
+    ],
+    "suggestion": [
+        "您是想看以老鼠为主角的故事片还是更偏向于教育性质的内容？",
+        "您需要2-4岁还是5-8岁的内容？",
+        "想找中文配音还是英文原版？"
+    ]
+}
+2025-03-31 19:51:44 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 结构化响应生成完成
+2025-03-31 19:51:44 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-03-31 19:51:44 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-03-31 19:51:44 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-03-31 19:51:44 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-03-31 19:51:44 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-03-31 19:51:44 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-03-31 19:51:44 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 19:51:58 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:51:58 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:51:58 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-03-31 19:51:58 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-03-31 19:51:58 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Starting HybridSearchSpringbootApplication using Java 17 with PID 41464 (D:\projects\hybrid-search-springboot\target\classes started by zhi25.liu in D:\projects\hybrid-search-springboot)
+2025-03-31 19:51:58 [main] DEBUG c.e.h.HybridSearchSpringbootApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-31 19:51:58 [main] INFO  c.e.h.HybridSearchSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 19:52:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:52:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-31 19:52:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:52:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-31 19:52:00 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-31 19:52:00 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:52:00 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-03-31 19:52:00 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-03-31 19:52:00 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:52:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 19:52:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 19:52:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-31 19:52:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 19:52:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2509 ms
+2025-03-31 19:52:02 [main] INFO  c.e.h.service.BGETokenizer - BGE Tokenizer加载成功
+2025-03-31 19:52:03 [main] INFO  c.e.h.service.BGEModelManager - BGE模型加载成功
+2025-03-31 19:52:06 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-03-31 19:52:06 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@6c930e7e 
+2025-03-31 19:52:07 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-03-31 19:52:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 19:52:07 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Started HybridSearchSpringbootApplication in 9.641 seconds (process running for 11.352)
+2025-03-31 19:52:07 [main] ERROR c.e.h.HybridSearchSpringbootApplication - --------------------启动成功--------------------
+2025-03-31 19:52:11 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 19:52:11 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 19:52:11 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-03-31 19:52:11 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+1. 精准识别意图并提取实体
+2. 生成3个搜索扩展词以提高搜索成功率
+
+**实体类型：**  
+- `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+- `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+- `actors`（演员）：出演的主要演员  
+- `directors`（导演）：执导的导演  
+- `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+**输出要求：**  
+1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+2. 扩展词需满足：  
+   - 必须是真实存在的搜索热词  
+   - 最接近用户查询意图的扩展词放在最前面
+   - 包含平台常用标签（如"4K修复版"）  
+   - 覆盖三种类型：  
+     • 官方名称变体  
+     • 民间流行叫法  
+     • 常见拼写错误/简称  
+
+**优化示例：**  
+用户查询: "周星驰演的粤语电影有哪些"  
+输出:  
+{
+    "title": [],  
+    "languages": ["粤语"],  
+    "actors": ["周星驰"],  
+    "directors": [],  
+    "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+}  
+
+用户查询: "有熊猫砍树的动画片?"  
+输出:  
+{
+    "title": ["功夫熊猫"],  
+    "languages": ["英语", "中文"],  
+    "actors": ["杰克·布莱克"],  
+    "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+    "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+}  
+
+**当前用户查询：**  
+{query} 
+2025-03-31 19:52:16 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - LLM 返回的原始响应: {
+    "title": ["料理鼠王", "精灵鼠小弟", "猫和老鼠"],
+    "languages": [],
+    "actors": [],
+    "directors": [],
+    "expansion_terms": ["Ratatouille电影", "Stuart Little动画", "Tom and Jerry大电影"]
+}
+2025-03-31 19:52:16 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 解析后的 JSON 结果: {title=[料理鼠王, 精灵鼠小弟, 猫和老鼠], languages=[], actors=[], directors=[], expansion_terms=[Ratatouille电影, Stuart Little动画, Tom and Jerry大电影]}
+2025-03-31 19:52:16 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 实体识别和扩展词生成结果: {title=[料理鼠王, 精灵鼠小弟, 猫和老鼠], languages=[], actors=[], directors=[], expansion_terms=[Ratatouille电影, Stuart Little动画, Tom and Jerry大电影]}
+2025-03-31 19:52:16 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 实体识别和语义扩展耗时: 4.461秒
+2025-03-31 19:52:16 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 向量查询拼接结果: Ratatouille电影 Stuart Little动画 Tom and Jerry大电影
+2025-03-31 19:52:16 [http-nio-8080-exec-2] INFO  c.e.h.service.BGEModelManager - 模型输出形状: [1][512][512]
+2025-03-31 19:52:16 [http-nio-8080-exec-2] INFO  c.e.h.service.BGEModelManager - 输入 tokenIds 长度: 512
+2025-03-31 19:52:18 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - ES搜索耗时: 1.88秒
+2025-03-31 19:52:18 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 结果处理耗时: 0.0秒
+2025-03-31 19:52:18 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业少儿教育影片推荐助手，需根据儿童认知特点和家长需求生成友好且富有教育意义的回复。
+
+### 输入数据：
+- 用户查询: 我想看有老鼠的电影
+- 识别到的实体（影片/角色/主题）: {"actors":[],"languages":[],"directors":[],"title":["料理鼠王","精灵鼠小弟","猫和老鼠"]}
+- 语义扩展词（年龄/教育目标/兴趣）: ["Ratatouille电影","Stuart Little动画","Tom and Jerry大电影"]
+- 搜索结果数量: 8
+- 搜索结果列表: [{"brief":"这是一个机灵老鼠与笨猫的故事，猫与老鼠之间展开大战，到底谁会赢呢？","actors":null,"publishYear":2020,"languages":["普通话"],"directors":null,"title":"猫和老鼠之猫鼠大战","aid":"lDrtHwVULM1619508957537","tags":["3至6岁","动画","搞笑"]},{"brief":"这是一个机灵老鼠与笨猫的故事，猫与老鼠之间展开大战，到底谁会赢呢？","actors":null,"publishYear":2020,"languages":["普通话"],"directors":null,"title":"猫和老鼠之猫鼠游戏","aid":"QNNbXUagme1623226260707","tags":["3至6岁","动画","搞笑"]},{"brief":"讲解猫和老鼠的实用小技巧\n\n","actors":null,"publishYear":2020,"languages":["普通话"],"directors":null,"title":"主播内容猫和老鼠-猫皇鼠皇","aid":"XMkGvRDurw1638758251560","tags":["游戏"]},{"brief":"Tom和Jerry这一对搞笑活宝，号称实力强大的猫和弱小的鼠之间的斗争。它们的动画形象已经为人津津乐道。在他们的世界中虽也可见恃强凌弱的残酷，但更多的是两个邻居之间的恶作剧和幽默片断，让人感受到久违的天真快意。","actors":null,"publishYear":1949,"languages":["普通话"],"directors":null,"title":"猫和老鼠-母球鼠","aid":"lMMLoRWsoA1612259931130","tags":["喜剧","动画","6至12岁"]},{"brief":"Tom和Jerry这一对搞笑活宝，号称实力强大的猫和弱小的鼠之间的斗争。它们的动画形象已经为人津津乐道。在他们的世界中虽也可见恃强凌弱的残酷，但更多的是两个邻居之间的恶作剧和幽默片断，让人感受到久违的天真快意。","actors":null,"publishYear":1948,"languages":["普通话"],"directors":null,"title":"猫和老鼠-城市乡巴鼠","aid":"fOTULyZCIp1612259931619","tags":["喜剧","动画","6至12岁"]},{"brief":"Tom和Jerry这一对搞笑活宝，号称实力强大的猫和弱小的鼠之间的斗争。它们的动画形象已经为人津津乐道。在他们的世界中虽也可见恃强凌弱的残酷，但更多的是两个邻居之间的恶作剧和幽默片断，让人感受到久违的天真快意。","actors":null,"publishYear":1952,"languages":["普通话"],"directors":null,"title":"猫和老鼠-猫鼠大战","aid":"MZZJNKNncV1612259931358","tags":["喜剧","动画","6至12岁"]},{"brief":"Tom和Jerry这一对搞笑活宝，号称实力强大的猫和弱小的鼠之间的斗争。它们的动画形象已经为人津津乐道。在他们的世界中虽也可见恃强凌弱的残酷，但更多的是两个邻居之间的恶作剧和幽默片断，让人感受到久违的天真快意。","actors":null,"publishYear":1950,"languages":["普通话"],"directors":null,"title":"猫和老鼠-清洁鼠","aid":"qLUgrPwUTt1612259932273","tags":["喜剧","动画","6至12岁"]},{"brief":"Tom和Jerry这一对搞笑活宝，号称实力强大的猫和弱小的鼠之间的斗争。它们的动画形象已经为人津津乐道。在他们的世界中虽也可见恃强凌弱的残酷，但更多的是两个邻居之间的恶作剧和幽默片断，让人感受到久违的天真快意。","actors":null,"publishYear":1951,"languages":["普通话"],"directors":null,"title":"猫和老鼠-顽皮鼠","aid":"feoGHSZgQj1612259931877","tags":["喜剧","动画","6至12岁"]}]
+
+### 任务要求：
+1. **搜索结果总结**（50-100字）：
+   - 用亲切的语言概括结果，如"为您找到5部适合6岁孩子的自然科学影片"。
+   - 若结果少，补充安慰性建议（如"试试调整年龄范围"）。
+
+2. **个性化推荐语**（每条30-60字）：
+   - 必须包含：
+     ✅ 教育价值（如"培养创造力/英语启蒙"）
+     ✅ 适龄特点（如"专为3-6岁设计"）
+     ✅ 趣味亮点（如"恐龙角色互动问答"）
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 推荐语必须与传入的 aid 一一对应
+
+3. **引导性问题**（3个）：
+   - 基于用户查询的合理扩展（如查"恐龙"可问"想找科普类还是冒险类恐龙片？"）
+   - 包含年龄分层建议（如"您需要2-4岁还是5-8岁的内容？"）
+
+4. **相关性评分**（0-10分）：
+   - 评分标准：
+     7-10分：完全匹配用户查询意图
+     4-6分：部分匹配用户查询意图
+     0-3分：几乎不匹配用户查询意图
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 评分必须与传入的 aid 一一对应
+   - 个性化推荐词列表按相关性评分倒序
+
+### 输出格式（必须严格遵循以下JSON格式）：
+{
+    "summary": "搜索结果总结",
+    "recommendations": [
+        {
+            "aid": "必须使用传入的 results 中的 aid",
+            "title": "影片名",
+            "recommendation_text": "个性化推荐语",
+            "llm_score": "相关性评分"
+        }
+    ],
+    "suggestion": [
+        "是否需要更多数学启蒙类影片？",
+        "想找中文配音还是英文原版？",
+        "这些影片也适合亲子共看，需要推荐家庭互动版吗？"
+    ]
+}
+
+### 重要提示：
+1. 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+2. 每个推荐必须对应一个传入的 aid
+3. 不能添加或删除传入的 aid
+4. 不能修改传入的 aid 的值
+5. 必须严格按照上述 JSON 格式返回，不要添加任何其他文本或说明
+6. 不要使用 Markdown 代码块标记
+7. 确保返回的是有效的 JSON 格式，可以被解析
+
+2025-03-31 19:53:20 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - LLM 返回的响应: {
+    "summary": "我们为您找到了8部关于老鼠的精彩动画片，其中包括经典的《猫和老鼠》系列，非常适合3至12岁的孩子观看。如果觉得选择不够多，可以尝试调整一下孩子的年龄范围哦！",
+    "recommendations": [
+        {
+            "aid": "lDrtHwVULM1619508957537",
+            "title": "猫和老鼠之猫鼠大战",
+            "recommendation_text": "这部影片专为3-6岁设计，通过搞笑的故事情节激发孩子们对友谊的理解与思考，同时享受欢乐时光。",
+            "llm_score": 8
+        },
+        {
+            "aid": "QNNbXUagme1623226260707",
+            "title": "猫和老鼠之猫鼠游戏",
+            "recommendation_text": "适合3-6岁小朋友观看，通过轻松幽默的方式教会孩子面对挑战时保持乐观积极的态度。",
+            "llm_score": 7
+        },
+        {
+            "aid": "XMkGvRDurw1638758251560",
+            "title": "主播内容猫和老鼠-猫皇鼠皇",
+            "recommendation_text": "虽然主要是针对游戏爱好者，但也包含了一些有趣的猫鼠故事片段，能够激发6岁以上儿童的兴趣。",
+            "llm_score": 3
+        },
+        {
+            "aid": "lMMLoRWsoA1612259931130",
+            "title": "猫和老鼠-母球鼠",
+            "recommendation_text": "这部面向6至12岁孩子的电影，不仅富有娱乐性，还能让孩子在笑声中学习解决问题的能力。",
+            "llm_score": 9
+        },
+        {
+            "aid": "fOTULyZCIp1612259931619",
+            "title": "猫和老鼠-城市乡巴鼠",
+            "recommendation_text": "同样适合6至12岁的观众，此片以独特的视角展现了城市生活，帮助孩子理解不同生活环境下的适应能力。",
+            "llm_score": 9
+        },
+        {
+            "aid": "MZZJNKNncV1612259931358",
+            "title": "猫和老鼠-猫鼠大战",
+            "recommendation_text": "推荐给6至12岁的孩子，通过经典的故事教导他们勇敢与智慧并存的重要性。",
+            "llm_score": 8
+        },
+        {
+            "aid": "qLUgrPwUTt1612259932273",
+            "title": "猫和老鼠-清洁鼠",
+            "recommendation_text": "特别为6至12岁的小朋友准备，强调个人卫生习惯的同时提供了许多乐趣。",
+            "llm_score": 8
+        },
+        {
+            "aid": "feoGHSZgQj1612259931877",
+            "title": "猫和老鼠-顽皮鼠",
+            "recommendation_text": "同样是针对6至12岁年龄段的孩子们，鼓励创造性思维，并展示了团队合作的力量。",
+            "llm_score": 8
+        }
+    ],
+    "suggestion": [
+        "您是想要更多像《料理鼠王》这样具有教育意义的电影吗？",
+        "寻找的是中文配音还是原版英文影片呢？",
+        "对于年龄较小的孩子，是否有特别的需求如增加互动环节或简化剧情？"
+    ]
+}
+2025-03-31 19:53:20 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 结构化响应生成完成
+2025-03-31 19:58:47 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-03-31 19:58:47 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-03-31 19:58:47 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-03-31 19:58:47 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-03-31 19:58:47 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-03-31 19:58:47 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-03-31 19:58:47 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 19:58:55 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:58:55 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-03-31 19:58:55 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-03-31 19:58:55 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-03-31 19:58:56 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Starting HybridSearchSpringbootApplication using Java 17 with PID 32556 (D:\projects\hybrid-search-springboot\target\classes started by zhi25.liu in D:\projects\hybrid-search-springboot)
+2025-03-31 19:58:56 [main] DEBUG c.e.h.HybridSearchSpringbootApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-31 19:58:56 [main] INFO  c.e.h.HybridSearchSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 19:58:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:58:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-31 19:58:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-31 19:58:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-31 19:58:58 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-31 19:58:58 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:58:58 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-03-31 19:58:58 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-03-31 19:58:58 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 19:58:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 19:58:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 19:58:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-31 19:58:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 19:58:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2308 ms
+2025-03-31 19:58:59 [main] INFO  c.e.h.service.BGETokenizer - BGE Tokenizer加载成功
+2025-03-31 19:59:01 [main] INFO  c.e.h.service.BGEModelManager - BGE模型加载成功
+2025-03-31 19:59:04 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-03-31 19:59:04 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@517d9cd5 
+2025-03-31 19:59:04 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-03-31 19:59:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 19:59:04 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Started HybridSearchSpringbootApplication in 10.016 seconds (process running for 12.309)
+2025-03-31 19:59:04 [main] ERROR c.e.h.HybridSearchSpringbootApplication - --------------------启动成功--------------------
+2025-03-31 19:59:04 [RMI TCP Connection(3)-172.29.16.1] WARN  o.s.b.a.d.e.ElasticsearchReactiveHealthIndicator - Elasticsearch health check failed
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-31 19:59:07 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 19:59:07 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 19:59:07 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-31 19:59:07 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+1. 精准识别意图并提取实体
+2. 生成3个搜索扩展词以提高搜索成功率
+
+**实体类型：**  
+- `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+- `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+- `actors`（演员）：出演的主要演员  
+- `directors`（导演）：执导的导演  
+- `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+**输出要求：**  
+1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+2. 扩展词需满足：  
+   - 必须是真实存在的搜索热词  
+   - 最接近用户查询意图的扩展词放在最前面
+   - 包含平台常用标签（如"4K修复版"）  
+   - 覆盖三种类型：  
+     • 官方名称变体  
+     • 民间流行叫法  
+     • 常见拼写错误/简称  
+
+**优化示例：**  
+用户查询: "周星驰演的粤语电影有哪些"  
+输出:  
+{
+    "title": [],  
+    "languages": ["粤语"],  
+    "actors": ["周星驰"],  
+    "directors": [],  
+    "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+}  
+
+用户查询: "有熊猫砍树的动画片?"  
+输出:  
+{
+    "title": ["功夫熊猫"],  
+    "languages": ["英语", "中文"],  
+    "actors": ["杰克·布莱克"],  
+    "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+    "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+}  
+
+**当前用户查询：**  
+{query} 
+2025-03-31 19:59:11 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - LLM 返回的原始响应: {
+    "title": ["料理鼠王", "精灵鼠小弟"],
+    "languages": [],
+    "actors": [],
+    "directors": ["布拉德·伯德", "罗伯·明可夫"],
+    "expansion_terms": ["美食总动员", "Stuart Little电影", "老鼠主演的动画片"]
+}
+2025-03-31 19:59:11 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 解析后的 JSON 结果: {title=[料理鼠王, 精灵鼠小弟], languages=[], actors=[], directors=[布拉德·伯德, 罗伯·明可夫], expansion_terms=[美食总动员, Stuart Little电影, 老鼠主演的动画片]}
+2025-03-31 19:59:11 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 实体识别和扩展词生成结果: {title=[料理鼠王, 精灵鼠小弟], languages=[], actors=[], directors=[布拉德·伯德, 罗伯·明可夫], expansion_terms=[美食总动员, Stuart Little电影, 老鼠主演的动画片]}
+2025-03-31 19:59:11 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 实体识别和语义扩展耗时: 4.592秒
+2025-03-31 19:59:11 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 向量查询拼接结果: 美食总动员 Stuart Little电影 老鼠主演的动画片
+2025-03-31 19:59:12 [http-nio-8080-exec-2] INFO  c.e.h.service.BGEModelManager - 模型输出形状: [1][512][512]
+2025-03-31 19:59:12 [http-nio-8080-exec-2] INFO  c.e.h.service.BGEModelManager - 输入 tokenIds 长度: 512
+2025-03-31 19:59:13 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - ES搜索耗时: 1.671秒
+2025-03-31 19:59:13 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 结果处理耗时: 0.0秒
+2025-03-31 19:59:13 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业少儿教育影片推荐助手，需根据儿童认知特点和家长需求生成友好且富有教育意义的回复。
+
+### 输入数据：
+- 用户查询: 我想看有老鼠的电影
+- 识别到的实体（影片/角色/主题）: {"actors":[],"languages":[],"directors":["布拉德·伯德","罗伯·明可夫"],"title":["料理鼠王","精灵鼠小弟"]}
+- 语义扩展词（年龄/教育目标/兴趣）: ["美食总动员","Stuart Little电影","老鼠主演的动画片"]
+- 搜索结果数量: 0
+- 搜索结果列表: []
+
+### 任务要求：
+1. **搜索结果总结**（50-100字）：
+   - 用亲切的语言概括结果，如"为您找到5部适合6岁孩子的自然科学影片"。
+   - 若结果少，补充安慰性建议（如"试试调整年龄范围"）。
+
+2. **个性化推荐语**（每条30-60字）：
+   - 必须包含：
+     ✅ 教育价值（如"培养创造力/英语启蒙"）
+     ✅ 适龄特点（如"专为3-6岁设计"）
+     ✅ 趣味亮点（如"恐龙角色互动问答"）
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 推荐语必须与传入的 aid 一一对应
+
+3. **引导性问题**（3个）：
+   - 基于用户查询的合理扩展（如查"恐龙"可问"想找科普类还是冒险类恐龙片？"）
+   - 包含年龄分层建议（如"您需要2-4岁还是5-8岁的内容？"）
+
+4. **相关性评分**（0-10分）：
+   - 评分标准：
+     7-10分：完全匹配用户查询意图
+     4-6分：部分匹配用户查询意图
+     0-3分：几乎不匹配用户查询意图
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 评分必须与传入的 aid 一一对应
+   - 个性化推荐词列表按相关性评分倒序
+
+### 输出格式（必须严格遵循以下JSON格式）：
+{
+    "summary": "搜索结果总结",
+    "recommendations": [
+        {
+            "aid": "必须使用传入的 results 中的 aid",
+            "title": "影片名",
+            "recommendation_text": "个性化推荐语",
+            "llm_score": "相关性评分"
+        }
+    ],
+    "suggestion": [
+        "是否需要更多数学启蒙类影片？",
+        "想找中文配音还是英文原版？",
+        "这些影片也适合亲子共看，需要推荐家庭互动版吗？"
+    ]
+}
+
+### 重要提示：
+1. 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+2. 每个推荐必须对应一个传入的 aid
+3. 不能添加或删除传入的 aid
+4. 不能修改传入的 aid 的值
+5. 必须严格按照上述 JSON 格式返回，不要添加任何其他文本或说明
+6. 不要使用 Markdown 代码块标记
+7. 确保返回的是有效的 JSON 格式，可以被解析
+8. 只返回相关性评分最高的前4部影片
+
+2025-03-31 19:59:22 [http-nio-8080-exec-2] DEBUG c.e.h.service.ModelLoader - LLM 返回的响应: {
+    "summary": "为您找到了2部以老鼠为主角的经典动画片，非常适合小朋友观看哦！如果希望看到更多选择，不妨尝试调整一下年龄范围或者增加一些兴趣点。",
+    "recommendations": [
+        {
+            "aid": "料理鼠王",
+            "title": "料理鼠王",
+            "recommendation_text": "这部影片专为5岁以上孩子设计，通过一只热爱烹饪的小老鼠的故事培养孩子们的创造力与坚持梦想的精神。",
+            "llm_score": 8
+        },
+        {
+            "aid": "精灵鼠小弟",
+            "title": "精灵鼠小弟",
+            "recommendation_text": "适合3-7岁儿童观赏，Stuart Little教会孩子们勇敢面对生活中的挑战，并懂得家庭的重要性，同时也能增强英语听力能力。",
+            "llm_score": 7
+        }
+    ],
+    "suggestion": [
+        "您是想要寻找更多关于动物冒险的故事吗？",
+        "是否需要针对特定年龄段（如4-6岁或7-10岁）的内容呢？",
+        "对电影的语言版本有特别偏好吗？比如中文配音或是英文原声版？"
+    ]
+}
+2025-03-31 19:59:22 [http-nio-8080-exec-2] INFO  c.e.h.service.SearchService - 结构化响应生成完成
+2025-03-31 20:01:05 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-03-31 20:01:05 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-03-31 20:01:05 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-03-31 20:01:05 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-03-31 20:01:05 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-03-31 20:01:05 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-03-31 20:01:05 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-31 20:01:11 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback12.LogbackNacosLoggingAdapterBuilder
+2025-03-31 20:01:11 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapterBuilder
+2025-03-31 20:01:11 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter: com.alibaba.nacos.logger.adapter.logback14.LogbackNacosLoggingAdapter match ch.qos.logback.classic.Logger success.
+2025-03-31 20:01:11 [main] INFO  c.a.n.client.logging.NacosLogging - Nacos Logging Adapter Builder: com.alibaba.nacos.logger.adapter.log4j2.Log4j2NacosLoggingAdapterBuilder
+2025-03-31 20:01:12 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Starting HybridSearchSpringbootApplication using Java 17 with PID 21752 (D:\projects\hybrid-search-springboot\target\classes started by zhi25.liu in D:\projects\hybrid-search-springboot)
+2025-03-31 20:01:12 [main] DEBUG c.e.h.HybridSearchSpringbootApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-03-31 20:01:12 [main] INFO  c.e.h.HybridSearchSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-31 20:01:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-31 20:01:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-31 20:01:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-31 20:01:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-31 20:01:14 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.nacos.NacosConfigAutoConfiguration' of type [com.alibaba.cloud.nacos.NacosConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [nacosAnnotationProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-03-31 20:01:15 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigProperties' of type [com.alibaba.cloud.nacos.NacosConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 20:01:15 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-03-31 20:01:15 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-03-31 20:01:15 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'nacosConfigManager' of type [com.alibaba.cloud.nacos.NacosConfigManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [nacosAnnotationProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-03-31 20:01:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-31 20:01:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-31 20:01:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-31 20:01:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-31 20:01:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3370 ms
+2025-03-31 20:01:17 [main] INFO  c.e.h.service.BGETokenizer - BGE Tokenizer加载成功
+2025-03-31 20:01:18 [main] INFO  c.e.h.service.BGEModelManager - BGE模型加载成功
+2025-03-31 20:01:21 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] Listening config for annotation: dataId=spring.ai.alibaba.configurable.prompt, group=DEFAULT_GROUP
+2025-03-31 20:01:21 [main] INFO  c.a.c.n.a.NacosAnnotationProcessor - [Nacos Config] register configurablePromptTemplateFactory#method#onConfigChange(List) listener on com.alibaba.cloud.ai.prompt.ConfigurablePromptTemplateFactory@31f5ffb9 
+2025-03-31 20:01:21 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-03-31 20:01:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-31 20:01:21 [main] INFO  c.e.h.HybridSearchSpringbootApplication - Started HybridSearchSpringbootApplication in 11.112 seconds (process running for 12.993)
+2025-03-31 20:01:21 [main] ERROR c.e.h.HybridSearchSpringbootApplication - --------------------启动成功--------------------
+2025-03-31 20:01:22 [RMI TCP Connection(7)-172.29.16.1] WARN  o.s.b.a.d.e.ElasticsearchReactiveHealthIndicator - Elasticsearch health check failed
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:174)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:148)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-31 20:01:37 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-31 20:01:37 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-31 20:01:37 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-03-31 20:01:37 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业的影视实体识别助手。你的任务是从用户的查询中：
+1. 精准识别意图并提取实体
+2. 生成3个搜索扩展词以提高搜索成功率
+
+**实体类型：**  
+- `title`（影片标题）：影视作品的名称，包括少儿、教育、电影、电视剧、综艺等  
+- `languages`（语言）：影视作品使用的语言（如中文、英语、日语等）  
+- `actors`（演员）：出演的主要演员  
+- `directors`（导演）：执导的导演  
+- `expansion_terms`（扩展词）：[新增] 3个相关搜索词（包含官方译名、民间俗称、常见错误拼写等）  
+
+**输出要求：**  
+1. 严格按JSON格式返回，缺失实体留空列表`[]`  
+2. 扩展词需满足：  
+   - 必须是真实存在的搜索热词  
+   - 最接近用户查询意图的扩展词放在最前面
+   - 包含平台常用标签（如"4K修复版"）  
+   - 覆盖三种类型：  
+     • 官方名称变体  
+     • 民间流行叫法  
+     • 常见拼写错误/简称  
+
+**优化示例：**  
+用户查询: "周星驰演的粤语电影有哪些"  
+输出:  
+{
+    "title": [],  
+    "languages": ["粤语"],  
+    "actors": ["周星驰"],  
+    "directors": [],  
+    "expansion_terms": ["周星驰电影全集", "星爷粤语片", "Stephen Chow电影"]  
+}  
+
+用户查询: "有熊猫砍树的动画片?"  
+输出:  
+{
+    "title": ["功夫熊猫"],  
+    "languages": ["英语", "中文"],  
+    "actors": ["杰克·布莱克"],  
+    "directors": ["马克·奥斯本", "约翰·斯蒂文森"],  
+    "expansion_terms": ["功夫熊猫全集", "Kung Fu Panda动画", "阿宝大电影"]  
+}  
+
+**当前用户查询：**  
+{query} 
+2025-03-31 20:01:44 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - LLM 返回的原始响应: {
+    "title": ["恐龙", "侏罗纪公园(动画版)", "恐龙列车"],
+    "languages": [],
+    "actors": [],
+    "directors": [],
+    "expansion_terms": ["恐龙动画全集", "史前动物动画片", "儿童恐龙电影"]
+}
+2025-03-31 20:01:44 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - 解析后的 JSON 结果: {title=[恐龙, 侏罗纪公园(动画版), 恐龙列车], languages=[], actors=[], directors=[], expansion_terms=[恐龙动画全集, 史前动物动画片, 儿童恐龙电影]}
+2025-03-31 20:01:44 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 实体识别和扩展词生成结果: {title=[恐龙, 侏罗纪公园(动画版), 恐龙列车], languages=[], actors=[], directors=[], expansion_terms=[恐龙动画全集, 史前动物动画片, 儿童恐龙电影]}
+2025-03-31 20:01:44 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 实体识别和语义扩展耗时: 7.425秒
+2025-03-31 20:01:44 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 向量查询拼接结果: 恐龙动画全集 史前动物动画片 儿童恐龙电影
+2025-03-31 20:01:45 [http-nio-8080-exec-3] INFO  c.e.h.service.BGEModelManager - 模型输出形状: [1][512][512]
+2025-03-31 20:01:45 [http-nio-8080-exec-3] INFO  c.e.h.service.BGEModelManager - 输入 tokenIds 长度: 512
+2025-03-31 20:01:45 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - ES搜索耗时: 0.697秒
+2025-03-31 20:01:45 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 结果处理耗时: 0.0秒
+2025-03-31 20:01:45 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - 发送到 LLM 的提示词: 你是一个专业少儿教育影片推荐助手，需根据儿童认知特点和家长需求生成友好且富有教育意义的回复。
+
+### 输入数据：
+- 用户查询: 我想看恐龙动画片
+- 识别到的实体（影片/角色/主题）: {"actors":[],"languages":[],"directors":[],"title":["恐龙","侏罗纪公园(动画版)","恐龙列车"]}
+- 语义扩展词（年龄/教育目标/兴趣）: ["恐龙动画全集","史前动物动画片","儿童恐龙电影"]
+- 搜索结果数量: 10
+- 搜索结果列表: [{"brief":"原创爆笑校园剧情，跟皮皮一起学15大高情商发言秘籍，掌握15个思辨方法，欢笑声中赶跑成长的烦恼，变身天才小辩手！","actors":null,"publishYear":2024,"languages":["普通话"],"directors":null,"title":"福尔摩斯第七季：侏罗纪恐龙传奇","aid":"ZqsitmkXPN1731302086622","tags":["3至12岁","思维逻辑","动画节目"]},{"brief":"侏罗纪恐龙世界乐园，恐龙蛋玩具故事，小故事大道理！\n","actors":null,"publishYear":2022,"languages":["普通话"],"directors":null,"title":"侏罗纪恐龙玩具世界","aid":"EsrkVjomSw1663720561791","tags":["玩具","益智","搞笑"]},{"brief":"侏罗纪恐龙玩具乐园，有趣的恐龙玩具，精彩恐龙玩具打斗\n","actors":null,"publishYear":2023,"languages":null,"directors":null,"title":"侏罗纪恐龙乐园","aid":"xaEkIwAkER1704451467557","tags":["3至6岁动画益智"]},{"brief":"动画情景设定丰富，故事有趣，恐龙种类繁多，让孩子们对恐龙有一个大致认识的同时，沉浸其中，与它们共同感受快乐，恐龙小伙伴们非常热爱冒险，有时会发现矿石宝藏，由此便能引发孩子们对世界的好奇，对冒险的热情；但有时也会遇到困难，小恐龙们会一起想办法解决，展现了团队合作的重要性，也给予了小观众们直面困难的勇气。","actors":null,"publishYear":2024,"languages":null,"directors":null,"title":"爆笑恐龙侏罗纪第3季","aid":"VEDycizmZU1723446634497","tags":[]},{"brief":"现在就让我们和小问号一起坐上时空穿梭机，重返光怪陆离的恐龙时代，和《探秘恐龙王国》一起，去体验与恐龙同行的惊险与刺激吧!\n","actors":null,"publishYear":2023,"languages":["普通话"],"directors":null,"title":"《探秘恐龙王国》系列 恐龙公园","aid":"zYDUlyMjGH1679550958010","tags":["科普","恐龙知识","少儿"]},{"brief":"动画情景设定丰富，故事有趣，恐龙种类繁多，让孩子们对恐龙有一个大致认识的同时，沉浸其中，与它们共同感受快乐，恐龙小伙伴们非常热爱冒险，有时会发现矿石宝藏，由此便能引发孩子们对世界的好奇，对冒险的热情；但有时也会遇到困难，小恐龙们会一起想办法解决，展现了团队合作的重要性，也给予了小观众们直面困难的勇气。","actors":null,"publishYear":2024,"languages":null,"directors":null,"title":"爆笑恐龙侏罗纪第2季","aid":"ciuIGHAGIs1721633737745","tags":[]},{"brief":"动画情景设定丰富，故事有趣，恐龙种类繁多，让孩子们对恐龙有一个大致认识的同时，沉浸其中，与它们共同感受快乐，恐龙小伙伴们非常热爱冒险，有时会发现矿石宝藏，由此便能引发孩子们对世界的好奇，对冒险的热情；但有时也会遇到困难，小恐龙们会一起想办法解决，展现了团队合作的重要性，也给予了小观众们直面困难的勇气。","actors":null,"publishYear":2024,"languages":null,"directors":null,"title":"爆笑恐龙侏罗纪","aid":"bjSTYBxMdL1717398127050","tags":[]},{"brief":"侏罗纪恐龙系列给孩子们还原富有想象力的世界，玩乐同时还能学到各个恐龙的科普知识。叮当恐龙世界团队专注于恐龙玩具的研发与故事演绎，用精美的玩具、丰富的场景、脑洞大开的剧本、欢快的配乐，给0-8岁宝宝打造一个好玩好看的恐龙世界。","actors":null,"publishYear":2020,"languages":["普通话"],"directors":null,"title":"叮当恐龙世界玩具之侏罗纪恐龙","aid":"cbEMUqAzLS1620719781960","tags":["3至6岁","恐龙","动画"]},{"brief":"侏罗纪恐龙玩具乐园 - 追随史前巨兽在玩具乐园的冒险。","actors":null,"publishYear":2023,"languages":["普通话"],"directors":null,"title":"侏罗纪恐龙玩具乐园","aid":"PAZKHnyAFb1700804923149","tags":["趣味","恐龙","益智"]},{"brief":"动画采用了定格的拍摄手法，向观众展现了侏罗纪时代恐龙们的生活方式。这里生存着一群骁勇的霸王龙、敏捷的迅猛龙、温顺的腕龙和强壮的三角龙等等。让我们跟随恐龙家族一起回到远古时代进行探险，了解更多关于恐龙的百科知识。","actors":null,"publishYear":2024,"languages":null,"directors":null,"title":"悠优宝贝恐龙世界之欢乐侏罗纪","aid":"XmTBHLCrla1704247504859","tags":[]}]
+
+### 任务要求：
+1. **搜索结果总结**（50-100字）：
+   - 用亲切的语言概括结果，如"为您找到5部适合6岁孩子的自然科学影片"。
+   - 若结果少，补充安慰性建议（如"试试调整年龄范围"）。
+
+2. **个性化推荐语**（每条30-60字）：
+   - 必须包含：
+     ✅ 教育价值（如"培养创造力/英语启蒙"）
+     ✅ 适龄特点（如"专为3-6岁设计"）
+     ✅ 趣味亮点（如"恐龙角色互动问答"）
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 推荐语必须与传入的 aid 一一对应
+
+3. **引导性问题**（3个）：
+   - 基于用户查询的合理扩展（如查"恐龙"可问"想找科普类还是冒险类恐龙片？"）
+   - 包含年龄分层建议（如"您需要2-4岁还是5-8岁的内容？"）
+
+4. **相关性评分**（0-10分）：
+   - 评分标准：
+     7-10分：完全匹配用户查询意图
+     4-6分：部分匹配用户查询意图
+     0-3分：几乎不匹配用户查询意图
+   - 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+   - 评分必须与传入的 aid 一一对应
+   - 个性化推荐词列表按相关性评分倒序
+
+### 输出格式（必须严格遵循以下JSON格式）：
+{
+    "summary": "搜索结果总结",
+    "recommendations": [
+        {
+            "aid": "必须使用传入的 results 中的 aid",
+            "title": "影片名",
+            "recommendation_text": "个性化推荐语",
+            "llm_score": "相关性评分"
+        }
+    ],
+    "suggestion": [
+        "是否需要更多数学启蒙类影片？",
+        "想找中文配音还是英文原版？",
+        "这些影片也适合亲子共看，需要推荐家庭互动版吗？"
+    ]
+}
+
+### 重要提示：
+1. 必须使用传入的 results 中的 aid，不能自己生成新的 aid
+2. 每个推荐必须对应一个传入的 aid
+3. 不能添加或删除传入的 aid
+4. 不能修改传入的 aid 的值
+5. 必须严格按照上述 JSON 格式返回，不要添加任何其他文本或说明
+6. 不要使用 Markdown 代码块标记
+7. 确保返回的是有效的 JSON 格式，可以被解析
+8. 输出结果只返回相关性评分最高的前4部影片
+
+2025-03-31 20:02:28 [http-nio-8080-exec-3] DEBUG c.e.h.service.ModelLoader - LLM 返回的响应: {
+    "summary": "为您找到了10部精彩的恐龙动画片，涵盖科普、冒险和益智等多种类型，非常适合3-12岁的孩子观看。",
+    "recommendations": [
+        {
+            "aid": "VEDycizmZU1723446634497",
+            "title": "爆笑恐龙侏罗纪第3季",
+            "recommendation_text": "培养孩子们的团队合作精神与勇气，专为3-12岁设计，丰富的恐龙种类和有趣的故事让学习变得轻松愉快。",
+            "llm_score": "9"
+        },
+        {
+            "aid": "bjSTYBxMdL1717398127050",
+            "title": "爆笑恐龙侏罗纪",
+            "recommendation_text": "激发孩子们对自然的好奇心和探索欲，适合3-12岁儿童，通过生动的恐龙角色互动问答增强学习兴趣。",
+            "llm_score": "8"
+        },
+        {
+            "aid": "ciuIGHAGIs1721633737745",
+            "title": "爆笑恐龙侏罗纪第2季",
+            "recommendation_text": "帮助小朋友学会解决问题的方法，针对3-12岁年龄段，充满趣味性的探险故事让科学知识不再枯燥。",
+            "llm_score": "8"
+        },
+        {
+            "aid": "zYDUlyMjGH1679550958010",
+            "title": "《探秘恐龙王国》系列 恐龙公园",
+            "recommendation_text": "增长恐龙相关的科普知识，面向少儿群体，以寓教于乐的方式带领孩子们走进神秘的史前世界。",
+            "llm_score": "7"
+        }
+    ],
+    "suggestion": [
+        "您是想看更侧重于科普教育的恐龙动画还是偏向于娱乐冒险类型的呢？",
+        "您的孩子现在几岁了？这样我可以推荐更适合他们年龄层的作品。",
+        "是否有特别偏好某个特定种类的恐龙或者希望影片中包含某些特定元素？"
+    ]
+}
+2025-03-31 20:02:28 [http-nio-8080-exec-3] INFO  c.e.h.service.SearchService - 结构化响应生成完成
+2025-03-31 20:04:41 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-03-31 20:04:41 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Start destroying ThreadPool
+2025-03-31 20:04:41 [Thread-17] WARN  c.a.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-03-31 20:04:41 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-03-31 20:04:41 [Thread-1] WARN  c.a.n.c.executor.ThreadPoolManager - [ThreadPoolManager] Destruction of the end
+2025-03-31 20:04:41 [Thread-14] WARN  c.a.n.c.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-03-31 20:04:41 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
