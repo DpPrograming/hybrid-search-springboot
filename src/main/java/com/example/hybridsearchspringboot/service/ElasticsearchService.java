@@ -15,11 +15,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.data.elasticsearch.core.query.IndexQueryBuilder;
 
-import java.util.List;
-import java.util.Map;
-import java.util.HashMap;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.ArrayList;
 
 @Slf4j
 @Service
@@ -28,7 +25,7 @@ public class ElasticsearchService {
 
     private final ElasticsearchOperations elasticsearchOperations;
     private final ModelLoader modelLoader;
-    private static final String INDEX_NAME = "hybrid_search";
+    private static final String INDEX_NAME = "new_movies_index";
 
     public Map<String, Object> hybridSearch(String query, int size) {
         try {
@@ -158,6 +155,12 @@ public class ElasticsearchService {
         try {
             // 构建基础的向量查询
             StringBuilder queryBuilder = new StringBuilder();
+            // 格式化向量数组为正确的JSON格式
+            String vectorJson = java.util.Arrays.toString(queryVector)
+                .replace("[", "[")
+                .replace("]", "]")
+                .replace(" ", "");
+                
             queryBuilder.append("""
                 {
                     "script_score": {
@@ -169,7 +172,7 @@ public class ElasticsearchService {
                             }
                         }
                     }
-                }""".formatted(java.util.Arrays.toString(queryVector)));
+                }""".formatted(vectorJson));
 
             // 如果有过滤条件，添加到查询中
             if (filterFields != null && !filterFields.isEmpty()) {
@@ -209,6 +212,9 @@ public class ElasticsearchService {
                 Map.class,
                 IndexCoordinates.of(INDEX_NAME)
             );
+            if (searchHits.getTotalHits() == 0) {
+                return new ArrayList<>();
+            }
 
             // 转换结果
             return searchHits.getSearchHits().stream()
@@ -312,7 +318,7 @@ public class ElasticsearchService {
             // 向量字段
             Map<String, Object> vectorMapping = new HashMap<>();
             vectorMapping.put("type", "dense_vector");
-            vectorMapping.put("dims", 1536);
+            vectorMapping.put("dims", 384);
             vectorMapping.put("index", true);
             vectorMapping.put("similarity", "cosine");
 

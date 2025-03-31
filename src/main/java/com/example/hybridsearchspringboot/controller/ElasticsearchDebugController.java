@@ -22,7 +22,7 @@ public class ElasticsearchDebugController {
 
     private final ElasticsearchOperations elasticsearchOperations;
     private final ElasticsearchService elasticsearchService;
-    private static final String INDEX_NAME = "hybrid_search";
+    private static final String INDEX_NAME = "new_movies_index";
 
     @PostMapping("/raw-query")
     public SearchHits<Map> executeRawQuery(@RequestBody String query) {

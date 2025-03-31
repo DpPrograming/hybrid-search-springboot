@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatModel;
-import org.springframework.ai.embedding.EmbeddingModel;
 import org.springframework.stereotype.Service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -17,7 +16,7 @@ import java.util.Map;
 @AllArgsConstructor
 public class ModelLoader {
 
-    private final EmbeddingModel embeddingModel;
+    private final LocalEmbeddingService embeddingService;
     private final ChatModel chatModel;
     private final PromptConfig promptConfig;
     private final ObjectMapper objectMapper;
@@ -70,7 +69,13 @@ public class ModelLoader {
      */
     public float[] textToVector(String text) {
         try {
-            return embeddingModel.embed(text);
+            List<Double> embedding = embeddingService.embed(text);
+            // 将 List<Double> 转换为 float[]
+            float[] result = new float[embedding.size()];
+            for (int i = 0; i < embedding.size(); i++) {
+                result[i] = embedding.get(i).floatValue();
+            }
+            return result;
         } catch (Exception e) {
             log.error("文本向量化失败", e);
             throw new RuntimeException("文本向量化失败", e);

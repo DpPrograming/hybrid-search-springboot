@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: hybrid-search-springboot
   ai:
     dash-scope:
       api-key: sk-6583593cb23c455180c167dad768c409
@@ -10,15 +12,11 @@ spring:
         embedding:
           options:
             model: text-embedding-v2
-  jmx:
-    enabled: false
-  main:
-    allow-bean-definition-overriding: true
-    jvm-args: --add-opens java.base/java.nio.charset=ALL-UNNAMED
+
 
 
 elasticsearch:
-  host: localhost
+  host: 10.145.12.11
   port: 9200
   scheme: http
 
