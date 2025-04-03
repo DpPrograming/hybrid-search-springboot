@@ -12,8 +12,17 @@ spring:
         embedding:
           options:
             model: text-embedding-v2
-
-
+  mvc:
+    static-path-pattern: /**
+  web:
+    resources:
+      static-locations: classpath:/static/
+      add-mappings: true
+      chain:
+        strategy:
+          content:
+            enabled: true
+            paths: /**
 
 elasticsearch:
   host: 10.145.12.11

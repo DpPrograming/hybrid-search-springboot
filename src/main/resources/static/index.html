@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>少儿AI搜索演示</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1 style="text-align: center; margin-bottom: 30px;">少儿AI搜索演示</h1>
+        <div class="input-group">
+            <input type="text" id="searchInput" placeholder="请输入搜索关键词..." value="">
+            <button onclick="search()">搜索</button>
+        </div>
+        <div class="preset-questions">
+            <div class="preset-question" onclick="setSearchText('有熊猫砍树的动画片')">有熊猫砍树的动画片</div>
+            <div class="preset-question" onclick="setSearchText('适合5岁孩子的国学启蒙动画有哪些？')">适合5岁孩子的国学启蒙动画有哪些？</div>
+            <div class="preset-question" onclick="setSearchText('我想看小猪佩奇')">我想看小猪佩奇</div>
+            <div class="preset-question" onclick="setSearchText('有不准出声舞的视频')">有不准出声舞的视频</div>
+            <div class="preset-question" onclick="setSearchText('我想看恐龙动画片')">我想看恐龙动画片</div>
+        </div>
+    </div>
+
+    <div class="loading-container" id="loadingContainer">
+        <span class="loading">正在搜索中</span>
+        <div class="loading-dots">
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+        </div>
+    </div>
+
+    <div id="searchResults"></div>
+
+    <script>
+        function setSearchText(text) {
+            document.getElementById('searchInput').value = text;
+            search();
+        }
+
+        function formatTime(seconds) {
+            return seconds.toFixed(2) + '秒';
+        }
+
+        async function search() {
+            const searchInput = document.getElementById('searchInput');
+            const searchResults = document.getElementById('searchResults');
+            const loadingContainer = document.getElementById('loadingContainer');
+            const query = searchInput.value.trim();
+
+            if (!query) {
+                alert('请输入搜索关键词');
+                return;
+            }
+
+            searchResults.innerHTML = '';
+            loadingContainer.style.display = 'flex';
+
+            try {
+                const response = await fetch('/api/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query })
+                });
+
+                if (!response.ok) {
+                    throw new Error('搜索请求失败');
+                }
+
+                const data = await response.json();
+                loadingContainer.style.display = 'none';
+
+                let html = '';
+
+                // 添加搜索时间信息
+                html += `<div class="search-time">
+                    <div class="search-time-item">搜索耗时：<span class="search-time-highlight">${formatTime(data.searchTime)}</span></div>
+                    <div class="search-time-item">结构化响应耗时：<span class="search-time-highlight">${formatTime(data.structuredResponseTime)}</span></div>
+                    <div class="search-time-item">总耗时：<span class="search-time-highlight">${formatTime(data.totalTime)}</span></div>
+                </div>`;
+
+                // 添加搜索结果总结
+                if (data.summary) {
+                    html += `<div class="summary">${data.summary}</div>`;
+                }
+
+                // 添加推荐列表
+                if (data.recommendations && data.recommendations.length > 0) {
+                    html += '<div class="recommendations">';
+                    data.recommendations.forEach(item => {
+                        html += `
+                            <div class="recommendation">
+                                <div class="poster-container">
+                                    <img class="poster" src="${item.poster || 'https://via.placeholder.com/300x400'}" alt="${item.title}" onerror="this.src='https://via.placeholder.com/300x400'">
+                                </div>
+                                <div class="recommendation-content">
+                                    <div class="recommendation-title">${item.title}</div>
+                                    <div class="recommendation-score">相关度评分：${item.llm_score}</div>
+                                    <div class="recommendation-text">${item.recommendation_text}</div>
+                                </div>
+                            </div>`;
+                    });
+                    html += '</div>';
+                }
+
+                // 添加建议问题
+                if (data.suggestion && data.suggestion.length > 0) {
+                    html += `
+                        <div class="suggestion">
+                            <h3>猜您想问：</h3>
+                            <ul>
+                                ${data.suggestion.map(item => `<li onclick="setSearchText('${item}')">${item}</li>`).join('')}
+                            </ul>
+                        </div>`;
+                }
+
+                searchResults.innerHTML = html;
+            } catch (error) {
+                loadingContainer.style.display = 'none';
+                searchResults.innerHTML = `<div class="error">搜索出错：${error.message}</div>`;
+            }
+        }
+
+        // 监听回车键
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                search();
+            }
+        });
+    </script>
+</body>
+</html> 

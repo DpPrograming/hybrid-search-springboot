@@ -17,8 +17,8 @@ import java.util.Map;
 import com.example.hybridsearchspringboot.tokenizer.BGETokenizer;
 
 @Service
-public class BGEModelManager {
-    private static final Logger logger = LoggerFactory.getLogger(BGEModelManager.class);
+public class MiniLMEmbeddingService implements EmbeddingService {
+    private static final Logger logger = LoggerFactory.getLogger(MiniLMEmbeddingService.class);
     private static final String MODEL_PATH = "models/paraphrase-multilingual-MiniLM-L12-v2/model.onnx";
     private static final int MAX_SEQUENCE_LENGTH = 128;
     private static final int VECTOR_DIMENSION = 384;
@@ -32,7 +32,8 @@ public class BGEModelManager {
     private String outputName;
 
     @PostConstruct
-    public void init() throws IOException {
+    @Override
+    public void init() throws Exception {
         try {
             // 初始化ONNX Runtime环境
             env = OrtEnvironment.getEnvironment();
@@ -60,7 +61,8 @@ public class BGEModelManager {
         }
     }
 
-    public float[] generateEmbedding(String text) {
+    @Override
+    public float[] generateEmbedding(String text) throws Exception {
         try {
             // 1. 分词
             int[] tokenIds = tokenizer.tokenize(text);
@@ -161,5 +163,10 @@ public class BGEModelManager {
             logger.error("生成向量失败: {}", e.getMessage(), e);
             throw new RuntimeException("生成向量失败", e);
         }
+    }
+
+    @Override
+    public int getVectorDimension() {
+        return VECTOR_DIMENSION;
     }
 } 
